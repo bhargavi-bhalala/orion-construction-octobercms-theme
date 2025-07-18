@@ -30,7 +30,6 @@ class SystemSeeder extends Seeder
 $item = $data[0]; // Only 1 page
 
     $entry = \Tailor\Models\SingleRecord::where('blueprint_uuid', $item['blueprint_uuid'])->first();
-        dd($entry);
 
     if (!$entry) {
         $entry = new \Tailor\Models\SingleRecord();
