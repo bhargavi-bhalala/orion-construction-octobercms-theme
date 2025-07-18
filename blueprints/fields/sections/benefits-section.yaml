@@ -1,0 +1,31 @@
+uuid: 9014f660-8a41-46f4-9eff-7e31d7958253
+handle: Blocks\BenefitsSection
+type: mixin
+name: Benefits Section
+
+fields:
+  section_title:
+    label: Section Title
+    type: text
+    default: Working with Orion
+    span: full
+    validation: required
+
+  benefits:
+    label: Benefits
+    type: repeater
+    span: full
+    prompt: Add benefit item
+    form:
+      fields:
+        title:
+          label: Title
+          type: text
+          span: auto
+          validation: required
+        description:
+          label: Description
+          type: textarea
+          size: small
+          span: auto
+          validation: required

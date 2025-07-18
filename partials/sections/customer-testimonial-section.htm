@@ -1,0 +1,26 @@
+{% if is_homepagethree %}
+<section class="relative py-10">
+  <div class="container-three">
+    <div class="md:flex">
+      <div class="w-full md:w-1/2">
+        <div class="md:max-w-[640px] mb-5 md:mb-0 md:pr-5">
+          <h2 class="title section-title mb-5">{{ section.section_title }}</h2>
+          <p class="m-0">{{ section.description }}</p>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2">
+        {% for testimonial in section.testimonials %}
+        <div class="border-t border-black/10 py-5 lg:flex">
+          <div class="shrink-0 lg:max-w-[160px] xl:max-w-[210px] w-full">
+            <h5 class="text-[24px] font-semibold">-{{ testimonial.name }}</h5>
+          </div>
+          <div class="w-full">
+            <p class="w-full mb-0">“{{ testimonial.message }}”</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}

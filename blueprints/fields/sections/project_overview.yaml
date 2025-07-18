@@ -1,0 +1,33 @@
+uuid: cfb5a131-4ee3-432c-b853-ef3a5b73365c
+handle: Blocks\ProjectOverview
+type: mixin
+name: Project Overview Section
+
+fields:
+  subtitle:
+    label: Sub Title
+    type: text
+    default: Portfolio
+
+  title:
+    label: Section Title
+    type: text
+    default: Our Projects
+
+  content:
+    label: Description Content
+    type: richeditor
+    size: huge
+
+  stats:
+    label: Statistics
+    type: repeater
+    prompt: Add a stat block
+    form:
+      fields:
+        count:
+          label: Stat Count
+          type: text
+        label:
+          label: Description
+          type: text

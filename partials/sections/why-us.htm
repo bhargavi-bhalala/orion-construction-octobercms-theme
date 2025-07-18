@@ -1,0 +1,25 @@
+{% if is_homepage or section %}
+<section class="our-Why-us-section relative md:py-8 lg:py-12">
+  <div class="container">
+    <div class="mb-5">
+      <h2 class="title mb-5">{{ section.title }}</h2>
+      <p class="mb-9">{{ section.description }}</p>
+    </div>
+
+    <div class="grid lg:gap-10 gap-6 xl:gap-20 grid-cols-1 md:grid-cols-3">
+      {% for stat in section.stats %}
+      <div class="border-t border-primary-900 pt-8 md:pt-5 lg:pt-12 relative before:w-5 before:h-5 before:bg-primary-900 before:rounded-full before:absolute before:left-0 before:-top-3">
+        <div class="md:flex gap-2 xl:gap-5">
+          <h3 class="text-3xl xl:text-[45px] w-[50px] xl:w-[75px] mb-0 shrink-0 md:leading-4xl">{{ stat.number }}</h3>
+          <div>
+            <h4 class="font-lexend text-lg xl:text-2xl mb-3 xl:leading-2xl">{{ stat.heading }}</h4>
+            <p>{{ stat.content }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>
+{% endif %}

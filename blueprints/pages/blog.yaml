@@ -1,0 +1,59 @@
+uuid: aefc8ee2-e323-4b6a-911e-221cefb2f330
+handle: Blog
+type: entry
+name: Blog
+drafts: false
+
+navigation:
+    label: Blog
+    icon: icon-pencil
+    order: 200
+
+fields:
+  thumb_image:
+    label: Thumb Image
+    type: mediafinder
+    mode: image
+    maxFiles: 1
+
+  banner:
+      label: Banner
+      type: mediafinder
+      mode: image
+      maxFiles: 1
+
+  title:
+    label: Blog Title
+    type: text
+    span: full
+    
+  short_description:
+    label: Short Description
+    type: richeditor
+    span: full
+
+  content:
+    label: Blog Content
+    type: richeditor
+    size: large
+
+  quote:
+    label: Highlight Quote
+    type: textarea
+
+  gallery:
+    label: Image Gallery
+    type: repeater
+    form:
+      fields:
+        image:
+          label: Image
+          type: mediafinder
+          mode: image
+
+  related_blogs:
+    label: Related Blogs
+    type: entries
+    source: Blog
+    displayMode: relation
+    maxItems: 2

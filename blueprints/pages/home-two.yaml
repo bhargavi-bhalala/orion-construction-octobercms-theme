@@ -1,0 +1,14 @@
+uuid: 4ba7a8de-8954-47fa-bc89-2dac4800f2f9
+handle: Page\Hometwo
+type: single
+name: Home Page Two
+drafts: false
+
+navigation:
+    icon: icon-rocket
+    order: 200
+
+fields:
+    _page_builder:
+        type: mixin
+        source: Fields\Sections

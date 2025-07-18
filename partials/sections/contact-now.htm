@@ -1,0 +1,20 @@
+ {% if is_homepagetwo %}
+ <section
+      class="bg-cover bg-no-repeat bg-left-top pb-8 md:pb-12 pt-14 md:pt-24 xl:pt-48 relative py-20 before:w-full before:h-full before:absolute before:top-0 before:left-0 before:bg-gradient-to-b before:from-white"
+      style="background-image: url({{ section.background_image|media  }});">
+      <div class="container relative z-1">
+        <div class="container-two">
+          <div class="max-w-[800px]">
+            <h2 class="title mb-5 md:text-left text-center">{{ section.title }}</h2>
+            <p class="mb-6 md:mb-10 md:text-left text-center">{{ section.description }}</p>
+          </div>
+          <div class="bg-primary-900 p-5 xl:p-12 text-center md:text-left md:flex items-center justify-between">
+            <h3 class="text-1xl xl:text-[34px] md:leading-[30px] text-white md:m-0 font-normal">{{ section.highlight_text }}</h3>
+            {% if section.button_text %}
+            <a href="{{ section.button_link }}" class="all-btn light-btn">{{ section.button_text }}</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </section>
+    {% endif %}

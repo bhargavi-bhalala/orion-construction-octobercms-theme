@@ -1,0 +1,24 @@
+export_paths:
+  - routes
+  - content
+  - app/Http
+  - app/Tags
+  - blueprints/fields
+  - blueprints/pages
+  - blueprints/forms
+  - blueprints/global
+  - layouts
+  - pages
+  - partials
+  - assets/css
+  - assets/fonts
+  - assets/images
+  - assets/js
+  - seeds/data
+  - package.json
+  - postcss.config.js
+  - tailwind.config.js
+  - tailwind.css
+  - theme.yaml
+  - fields.yaml
+  - README.md

@@ -1,0 +1,49 @@
+url = "/home-three"
+layout = "default"
+title = "Home Three"
+seoOptionsOgTitle = "Home Page Three"
+seoOptionsOgDescription = "Home Page Three"
+seoOptionsOgImage = "/Orion Image.png"
+seoOptionsOgRefImage = "{{ 'assets/images/Orion Image.png' | theme }}"
+seoOptionsEnabledInSitemap = 1
+seoOptionsUseUpdatedAt = 1
+seoOptionsRobotIndex = "index"
+seoOptionsRobotFollow = "follow"
+seoOptionsOgCard = "summary_large_image"
+
+[section homePageThree]
+handle = "Page\Homethree"
+==
+{% set is_homepagethree = true %}
+{% for section in homePageThree.sections %}
+    {% partial 'sections/' ~ str_slug(section.type) section=section is_homepagethree=is_homepagethree %}
+{% endfor %}
+
+
+<!-- start hero section -->
+     
+      <!-- end hero section -->
+      <!-- start What We do? section -->
+     
+      <!-- end What We do? section -->
+
+      <!-- start about Image with text section -->
+ 
+
+      <!-- end about Image with text section -->
+
+      <!-- start full text section -->
+      
+      <!-- end full text section -->
+
+      <!-- start Recent Projects section -->
+      
+      <!-- end Recent Projects section -->
+
+      <!-- start What our customer says section -->
+     
+      <!-- end What our customer says section -->
+
+      <!-- start Our Gallery section -->
+      
+      <!-- end Our Gallery section -->

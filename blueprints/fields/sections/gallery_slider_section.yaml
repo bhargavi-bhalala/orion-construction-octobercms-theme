@@ -1,0 +1,27 @@
+uuid: 99afc822-d474-416e-85f4-12e78fd3995b
+handle: Blocks\GallerySliderSection
+type: mixin
+name: Gallery Slider Section
+
+fields:
+  section_title:
+    label: Section Title
+    type: text
+    default: Our Gallery
+
+  gallery_items:
+    label: Gallery Items
+    type: repeater
+    prompt: Add Gallery Item
+    form:
+      fields:
+        image:
+          label: Image
+          type: mediafinder
+          mode: image
+        title:
+          label: Title
+          type: text
+        number:
+          label: Number
+          type: text

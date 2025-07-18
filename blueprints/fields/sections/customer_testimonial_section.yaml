@@ -1,0 +1,27 @@
+uuid: aa3f6eb4-4e72-4ed3-b8fc-c8cfdcd0dd0c
+handle: Blocks\CustomerTestimonialSection
+type: mixin
+name: Customer Testimonial Section
+
+fields:
+  section_title:
+    label: Section Title
+    type: text
+    default: What our customer says?
+
+  description:
+    label: Description
+    type: textarea
+
+  testimonials:
+    label: Testimonials
+    type: repeater
+    prompt: Add Testimonial
+    form:
+      fields:
+        name:
+          label: Name
+          type: text
+        message:
+          label: Message
+          type: textarea

@@ -1,0 +1,22 @@
+uuid: 1fd1194a-9826-4d81-a155-c0eea041c160
+handle: Artists
+type: entry
+name: Artists
+drafts: false
+
+navigation:
+    icon: icon-magic
+    order: 200
+
+fields:
+    title:
+        label: Title
+        type: text
+        span: full
+    position:
+        label: Position
+        type: text
+    photo:
+        label: Photo
+        type: mediafinder
+        mode: image

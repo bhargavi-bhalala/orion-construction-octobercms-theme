@@ -1,0 +1,71 @@
+url = "/service"
+layout = "default"
+title = "Service"
+seoOptionsOgTitle = "Service"
+seoOptionsOgDescription = "Service"
+seoOptionsOgImage = "/Orion Image.png"
+seoOptionsOgRefImage = "{{ 'assets/images/Orion Image.png' | theme }}"
+seoOptionsEnabledInSitemap = 1
+seoOptionsUseUpdatedAt = 1
+seoOptionsRobotIndex = "index"
+seoOptionsRobotFollow = "follow"
+seoOptionsOgCard = "summary_large_image"
+
+[collection ourServices]
+handle = "OurServices"
+
+[entry service]
+handle = "OurServices"
+entrySlug = ":slug"
+==
+{% set slug = get('slug') %}
+
+{% if slug %}
+    {# Redirect to /service/:slug page #}
+    {% do redirect('service-detail'|page({ slug: slug })) %}
+{% endif %}
+
+{% set ourService = ourServices.paginate(5) %}
+<!-- start Our Services section -->
+<section class="our-services-section relative py-8 md:py-12 lg:mb-5 xl:mb-16">
+    <div class="container">
+        <div class="flex items-center justify-between sm:mb-5 md:mb-10">
+            <h2 class="title">Our Services</h2>
+        </div>
+        <div class="relative">
+            <div class="border-t border-black grid-append" x-data="{selected:1}">
+
+                {% for service in ourService %}
+                {% set idx = ((ourService.currentPage - 1) * ourService.perPage) + loop.index %}
+                <div class="faqs-list grid-list-append relative group border-b border-black py-4 xl:py-6" :class="{ 'active': selected === {{ idx }} }">
+                    <h3 class="faqs-title cursor-pointer flex items-start m-0 relative pl-0 pr-10 md:pr-16 gap-3 md:gap-5 xl:gap-8 text-black text-1xl leading-normal xl:text-[24px] 2xl:text-3xl font-medium" @click="selected !== {{ idx }} ? selected = {{ idx }} : selected = null">
+                        <span>{{ "%02d"|format(idx) }}</span> {{ service.title }}
+                    </h3>
+                    <div class="faqs-content overflow-hidden transition-all max-h-0 duration-700 md:pl-10 xl:pl-16" x-ref="container{{ idx }}"x-bind:style="selected === {{ idx }} ? 'max-height: ' + $refs.container{{ idx }}.scrollHeight + 'px' : ''">
+                        <p class="m-0 p-0 mt-3">{{ service.short_description|raw }}</p>
+                        {% if service.button_link %}
+                        <a href="{{ service.button_link }}/{{ service.slug }}" class="all-btn mt-6 mb-2">
+                            {{ service.button_text ?: 'Read More' }}
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+
+            {% if ourService.hasMorePages %}
+            <div class="text-center mt-6 sm:mt-10">
+                <a href="javascript:;" class="all-btn btn-primary btn-icon load-more-btn" data-next-page="{{ ourService.currentPage + 1 }}">
+                    Load More
+                    <span class="load-more-spinner" style="display: none;">
+                        <img src="{{ '/assets/images/loader-icon.svg' | theme }}" alt="Loading...">
+                    </span>
+                </a>
+            </div>
+            {% endif %}
+
+        </div>
+    </div>
+</section>
+<!-- end Our Services section -->

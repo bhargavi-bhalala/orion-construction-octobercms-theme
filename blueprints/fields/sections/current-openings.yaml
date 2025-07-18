@@ -1,0 +1,45 @@
+uuid: ffe4a9fe-6097-441d-9bc8-07f56d843c4d
+handle: Blocks\CurrentOpenings
+type: mixin
+name: Current Openings Section
+
+fields:
+  section_title:
+    label: Section Title
+    type: text
+    default: Current Openings
+    span: full
+    validation: required
+
+  job_listings:
+    label: Job Listings
+    type: repeater
+    prompt: Add Job Opening
+    span: full
+    form:
+      fields:
+        job_title:
+          label: Job Title
+          type: text
+          validation: required
+        company_name:
+          label: Company Name
+          type: text
+          default: Orion Residential Studio
+        qualifications:
+          label: Qualifications (List)
+          type: repeater
+          prompt: Add Qualification
+          form:
+            fields:
+              item:
+                label: Qualification
+                type: text
+        apply_link:
+          label: Apply Now Link
+          type: text
+          default: javascript:;
+        apply_btn_text:
+          label: Apply Now Text
+          type: text
+          default: Apply Now

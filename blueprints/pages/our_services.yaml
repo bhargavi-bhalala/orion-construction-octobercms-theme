@@ -1,0 +1,98 @@
+uuid: 41564006-ce19-45c5-b986-9be0d38c27b8
+handle: OurServices
+name: Our Services
+type: entry
+drafts: false
+
+navigation:
+    icon: icon-cogs
+    order: 200
+    preview:
+    url: /service/{{ slug }} # Enables preview in admin
+
+fields:
+  title:
+    label: Title
+    type: text
+    span: full
+
+  slug:
+      label: Slug
+      type: text
+      required: true
+      preset:
+        field: title
+        type: slug
+
+  image:
+      label: Image
+      type: mediafinder
+      mode: image     
+
+  short_description:
+    label: Short Description
+    type: richeditor
+    span: full
+
+  description:
+    label: Description
+    type: richeditor
+    span: full
+
+  button_text:
+    label: Button Text
+    type: text
+    default: Read More
+    span: left
+
+  button_link:
+    label: Button Link
+    type: text
+    span: right
+
+  stats:
+    label: Stats
+    type: repeater
+    form:
+      fields:
+        count:
+          label: Number
+          type: text
+        heading:
+          label: Heading
+          type: text
+        description:
+          label: Description
+          type: textarea
+
+  images:
+    label: Gallery Images
+    type: repeater
+    form:
+      fields:
+        image:
+          label: Image
+          type: mediafinder
+          mode: image
+
+  steps:
+    label: How it Works
+    type: repeater
+    form:
+      fields:
+        icon:
+          label: Icon
+          type: mediafinder
+          mode: image
+        title:
+          label: Step Title
+          type: text
+        description:
+          label: Step Description
+          type: textarea
+
+  related_services:
+    label: Related Services
+    type: entries
+    source: OurServices
+    maxItems: 5

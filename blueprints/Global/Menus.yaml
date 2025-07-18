@@ -1,0 +1,49 @@
+uuid: bc168c01-4acf-4257-9e22-0224e91d5abe
+handle: Site\Menus
+type: entry
+name: Menu
+drafts: false
+pagefinder: false
+
+navigation: 
+    label: Menus
+    icon: icon-sitemap
+
+fields:
+    description:
+        label: Menu description
+        type: textarea
+        size: small
+        tab: Description
+    
+    items:
+          tab: Items
+          label: Items
+          type: nesteditems
+          maxDepth: 2
+          span: adaptive
+          form: 
+            fields:
+                title:
+                    label: Title
+                    type: text
+                    validation: required
+
+                url:
+                    label: URL
+                    type: pagefinder
+
+    contact_button_text:
+        label: Contact Button Text
+        type: text
+        default: Get In Touch
+
+    contact_button_url:
+        label: Contact Button URL
+        type: text
+        default: /contact
+
+    show_arrow_icon:
+        label: Show Arrow Icon
+        type: checkbox
+        default: true

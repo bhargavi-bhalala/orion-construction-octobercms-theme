@@ -1,0 +1,68 @@
+uuid: 00a25db4-f8a6-4942-9af0-42c3585a4c6e
+handle: Page\Contact
+type: single
+name: Contact Page
+drafts: true
+
+navigation:
+    icon: icon-id-badge
+    order: 200
+
+components:
+    form: {}   
+
+fields:
+    title:
+      label: Title
+      type: text
+
+    description:
+      label: Description
+      type: textarea
+
+    address_title:
+      label: Address Title
+      type: text
+
+    offices:
+      label: Office Addresses
+      type: repeater
+      form:
+        fields:
+          title:
+            label: Label
+            type: text
+          address:
+            label: Address
+            type: textarea
+            
+    email:
+      label: Email
+      type: text
+
+    phone:
+      label: Phone
+      type: text
+      
+    socials:
+        label: Socials
+        type: repeater
+        form:
+            fields:
+                url:
+                    label: Url
+                    type: text
+                icon:
+                    label: Icon
+                    type: dropdown
+                    options:
+                        facebook-f: Facebook
+                        youtube: YouTube
+                        twitter: Twitter
+                        instagram: Instagram
+                        linkedin-in: LinkedIn
+                        github: GitHub
+                        whatsapp: WhatsApp
+                        pinterest-p: Pinterest
+                        telegram-plane: Telegram
+                        reddit-alien: Reddit Alien

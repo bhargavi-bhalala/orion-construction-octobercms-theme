@@ -1,0 +1,24 @@
+uuid: 1a770c0f-1b1a-42fe-9ea3-d999eff74e9c
+handle: Blocks\LatestBlogSection
+type: mixin
+name: Latest Blog Section
+
+fields:
+  section_title:
+    label: Section Title
+    type: text
+    default: Our News & Blogs
+
+  sub_title:
+    label: Sub Title
+    type: text
+    default: Latest Updates
+
+  description:
+    label: Description
+    type: textarea
+
+  latest_blogs:
+    label: BLogs
+    type: entries
+    source: Blog

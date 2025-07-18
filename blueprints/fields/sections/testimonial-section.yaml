@@ -1,0 +1,22 @@
+uuid: b4a59ca3-9246-47bc-ac9d-e938bbd5191d
+handle: Blocks\TestimonialSection
+type: mixin
+name: Testimonial Section
+
+fields:
+  title:
+    label: Section Title
+    type: text
+
+  testimonials:
+    label: Testimonials
+    type: repeater
+    minItems: 1
+    form:
+      fields:
+        quote:
+          label: Quote
+          type: textarea
+        name:
+          label: Name
+          type: text

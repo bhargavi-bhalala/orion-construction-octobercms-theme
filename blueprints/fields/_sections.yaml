@@ -1,0 +1,165 @@
+uuid: a0e78fc2-a3fe-495e-b0d5-58118ad097f6
+handle: Fields\Sections
+type: mixin
+name: Page Sections
+
+fields:
+  sections:
+    label: Sections
+    type: repeater
+    displayMode: builder
+    span: adaptive
+    tab: Sections
+    groups:
+        hero_section:
+            name: Hero Section
+            description: Displays a background image with a title and short/long description.
+            icon: icon-diamond
+            fields:
+                _mixin:
+                    type: mixin
+                    source: Sections\HeroSection
+
+        benefits_section:
+            name: Benefits Section
+            description: A grid of employee benefits.
+            icon: icon-star
+            fields:
+              _mixin:
+                type: mixin
+                source: Blocks\BenefitsSection
+
+        current_openings:
+            name: Current Openings
+            description: List job positions with qualifications and apply links
+            icon: icon-briefcase
+            fields:
+              _mixin:
+                type: mixin
+                source: Blocks\CurrentOpenings
+
+        project_section:
+            name: Project Section
+            description: A grid of Project.
+            icon: icon-file
+            fields:
+              _mixin:
+                type: mixin
+                source: Blocks\ProjectSection
+
+        our_team_member_section:
+            name: Our Team Member Section
+            description: A grid of Team.
+            icon: icon-magic
+            fields:
+              _mixin:
+                type: mixin
+                source: Blocks\OurTeamMember
+
+        why_us:
+            name: Why Us
+            description: Shows key stats like completed projects, experts, etc.
+            icon: icon-bar-chart
+            fields:
+              _mixin:
+                type: mixin
+                source: Blocks\WhyUsSection
+
+        testimonials_section:
+            name: Testimonial
+            description: A testimonial slider with quote, name, and image/icon.
+            icon: icon-comments
+            fields:
+              _mixin:
+                type: mixin
+                source: Blocks\TestimonialSection
+
+        our_story_section:
+              name: Our Story Section
+              description: A section describing the company story with image and read more link.
+              icon: icon-book
+              fields:
+                _mixin:
+                  type: mixin
+                  source: Blocks\OurStorySection
+
+        our_services_section:
+              name: Our Services
+              description: Accordion-style service list with toggle.
+              icon: icon-cogs
+              fields:
+                _mixin:
+                  type: mixin
+                  source: Blocks\OurServicesSection
+
+        explore_worked_section:
+            name: Explore Worked Section
+            icon: icon-image
+            description: Image grid with CTA
+            fields:
+              _mixin:
+                type: mixin
+                source: Blocks\ExploreWorkedSection
+
+        project_services:
+              name: Service Features
+              description: A set of service icons with titles and descriptions.
+              icon: icon-cog
+              fields:
+                _mixin:
+                  type: mixin
+                  source: Blocks\ServiceFeatures
+
+        project_overview:
+              name: Project Overview
+              description: Displays a section with project statistics and text content.
+              icon: icon-bar-chart
+              fields:
+                _mixin:
+                  type: mixin
+                  source: Blocks\ProjectOverview
+
+        latest_blog:
+              name: Latest Blog Section
+              description: Displays a section with latest blog.
+              icon: icon-bar-chart
+              fields:
+                _mixin:
+                  type: mixin
+                  source: Blocks\LatestBlogSection
+
+        contact_now:
+              name: Contact Now Section
+              description: CTA section with background, heading, and button
+              icon: icon-phone
+              fields:
+                _mixin:
+                  type: mixin
+                  source: Blocks\ContactNowSection
+
+        video_text_section:
+              name: Video Text Section
+              description: A styled text section with inline video and image reveals
+              icon: icon-play-circle
+              fields:
+                _mixin:
+                  type: mixin
+                  source: Blocks\VideoTextSection
+
+        customer_testimonial_section:
+              name: Customer Testimonial Section
+              description: Customer Testimonial Section
+              icon: icon-user
+              fields:
+                _mixin:
+                  type: mixin
+                  source: Blocks\CustomerTestimonialSection 
+
+        gallery_slider_section:
+              name: Gallery Slider Section
+              description: Gallery Slider Section
+              icon: icon-image
+              fields:
+                _mixin:
+                  type: mixin
+                  source: Blocks\GallerySliderSection

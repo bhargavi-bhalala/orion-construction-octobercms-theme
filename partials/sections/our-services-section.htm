@@ -1,0 +1,49 @@
+{% if is_homepage %}
+<!-- start Our Services section -->
+<section class="our-services-section relative bg-gray-200 py-12 lg:mb-5 xl:mb-16">
+  <div class="container">
+    <div class="flex items-center justify-between">
+      <h2 class="title">{{section.section_title}}</h2>
+    </div>
+    <div class="border-t border-black" x-data="{selected:1}">
+
+        {% for item in section.services|slice(0, 5) %}
+        <div class="faqs-list border-b border-black py-4 xl:py-6" :class="{ 'active': selected == {{ loop.index }} }">
+            <h3 class="faqs-title cursor-pointer flex items-center m-0 relative pl-0 pr-10 md:pr-16 gap-3 md:gap-5 xl:gap-8 text-black text-1xl leading-normal xl:text-[24px] 2xl:text-3xl font-medium" @click="selected !== {{ loop.index }} ? selected = {{ loop.index }} : selected = null" :class="[ selected == {{ loop.index }} ? 'active' : '' ]">
+                <span>{{ loop.index < 10 ? '0' ~ loop.index : loop.index }}</span> {{ item.title }}
+            </h3>
+            <div class="faqs-content overflow-hidden transition-all max-h-0 duration-700 md:pl-10 xl:pl-16"  x-ref="container{{ loop.index }}"x-bind:style="selected === {{ loop.index }} ? 'max-height: ' + $refs.container{{ loop.index }}.scrollHeight + 'px' : ''">
+                <p class="m-0 p-0 mt-3">{{ item.short_description|raw }}</p>
+                {% if item.button_link %}
+                <a href="{{ item.button_link }}/{{ item.slug }}" class="all-btn mt-6 mb-2">
+                    {{ item.button_text ?: 'Read More' }}
+                </a>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+</section>
+<!-- end Our Services section -->
+{% endif %}
+
+{% if is_homepagethree %}
+<section class="py-16 xl:py-24">
+    <div class="container-three">
+        <h2 class="title section-title mb-10">{{ section.section_title }}</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 lg:gap-10">
+            {% for item in section.services|slice(0, 4) %}
+            <div>
+                <div class="mb-6 h-[40px] flex items-center">
+                    <a href="/service/{{ item.slug }}"> <img src="{{ item.image|media }}" alt="img" class=""></a>
+                </div>
+                 <a href="/service/{{ item.slug }}"><h3 class="2xl:text-[25px] mb-2 sm:mb-4">{{ item.title }}</h3></a>
+                {{ item.short_description|striptags|slice(0, 100) ~ '...' }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}

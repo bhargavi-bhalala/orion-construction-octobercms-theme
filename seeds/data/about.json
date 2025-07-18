@@ -1,0 +1,57 @@
+[
+	{
+		"id":"1",
+		"site_id":"1",
+		"site_root_id":"1",
+		"blueprint_uuid":"010d1830-49e7-4d37-9d15-a4f7c684f5e0",
+		"content_group":null,
+		"title":"About Us",
+		"slug":"about-us",
+		"is_enabled":"1",
+		"published_at":null,
+		"published_at_date":"2025-07-15 10:33:31",
+		"expired_at":null,
+		"draft_mode":"1",
+		"primary_id":null,
+		"primary_attrs":null,
+		"is_version":"0",
+		"created_user_id":"1",
+		"updated_user_id":"1",
+		"deleted_user_id":null,
+		"deleted_at":null,
+		"created_at":"2025-07-15 10:33:31",
+		"updated_at":"2025-07-15 10:34:58",
+		"sections":[
+			{
+				"_group": "hero_section",
+				"hero_title": "About Us",
+				"short_description": "Diam maecenas sed enim ut sem viverra aliquet eget. In nulla posuere sollicitudin aliquam ultrices sagittis. Nulla pellentesque dignissim enim sit. Velit egestas dui id ornare arcu odio ut sem nulla. Sed risus ultricies tristique nulla. Urna neque viverra justo nec ultrices dui sapien eget mi. Cursus risus at ultrices mi tempus imperdiet nulla malesuada pellentesque.",
+				"long_description": "<p>Mattis molestie a iaculis at erat pellentesque adipiscing commodo. Vehicula ipsum a arcu cursus. Id eu nisl nunc mi ipsum faucibus vitae aliquet nec. Nunc lobortis mattis aliquam faucibus purus in massa. Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Mattis rhoncus urna neque viverra justo nec ultrices dui. Aliquam vestibulum morbi blandit cursus risus at. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Ornare arcu odio ut sem nulla pharetra diam .Sagittis vitae et leo duis ut diam. Porta lorem mollis aliquam ut porttitor leo a diam. Lacinia at quis risus sed vulputate odio ut. Arcu vitae elementum curabitur vitae. Ultricies tristique nulla aliquet enim tortor at. Ultrices in iaculis nunc sed augue lacus viverra vitae. Duis convallis convallis tellus id interdum velit laoreet. Etiam sit amet nisl purus in mollis nunc sed. Elementum nisi quis eleifend quam adipiscing. Augue neque gravida in fermentum et sollicitudin ac. Pellentesque sit amet porttitor eget dolor morbi non.</p>"
+			}	
+		],
+
+		"sections":[
+			{
+				"_group": "project_section"[
+					{
+						"projects": [] 
+					}
+				],
+			}	
+		],
+
+
+		"sections":[
+			{
+				"_group": "why_us"[
+					{
+						"title":"Why Us?",
+						"description":"Sit amet nisl suscipit adipiscing bibendum est. In ornare quam viverra orci. Neque volutpat ac tincidunt vitae semper quis. Tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Sem nulla pharetra diam sit amet nisl. Cursus mattis molestie a iaculis. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Vel pretium lectus quam id leo in. Massa tempor nec feugiat nisl. Nunc vel risus commodo viverra.}
+					}
+				],
+			}	
+		],
+
+
+	}
+]

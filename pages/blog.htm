@@ -1,0 +1,62 @@
+url = "/blog"
+layout = "default"
+title = "Blog"
+meta_title = "{{ Blog.title }}"
+seoOptionsOgTitle = "Blog"
+seoOptionsOgDescription = "Blog"
+seoOptionsOgImage = "/Orion Image.png"
+seoOptionsOgRefImage = "{{ 'assets/images/Orion Image.png' | theme }}"
+seoOptionsEnabledInSitemap = 1
+seoOptionsUseUpdatedAt = 1
+seoOptionsRobotIndex = "index"
+seoOptionsRobotFollow = "follow"
+seoOptionsOgCard = "summary_large_image"
+
+[section Blog]
+handle = "Blog"
+identifier = "slug"
+
+[collection Blogs]
+handle = "Blog"
+==
+{% set slug = get('slug') %}
+
+{% if slug %}
+    {# Redirect to /blog/:slug page #}
+    {% do redirect('blog-detail'|page({ slug: slug })) %}
+{% endif %}
+
+{% set blogss = Blogs.paginate(5) %}
+<section class="our-services-section relative py-8 md:py-12 lg:mb-5 xl:mb-16">
+        <div class="container">
+          <div class="flex items-center justify-between mb-5 lg:mb-10">
+            <h2 class="title mb-0">Blog & News</h2>
+          </div>
+            <div class="grid grid-cols-1 grid-append sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10">
+              <!-- blog box -->
+               {% for blogs in blogss %}
+              <div class="blog-box grid-list-append bg-gray-200 group">
+                <div class="relative overflow-hidden before:pt-[52%] before:block">
+                  <a href="/blog/{{blogs.slug}}" class="absolute top-0 left-0 w-full h-full block">
+                    <img src="{{ blogs.thumb_image|media }}" alt="img" class="h-full w-full object-cover transition-all group-hover:scale-110 duration-300">
+                  </a>
+                </div>
+                <div class="p-4 xl:p-7">
+                  <h3 class="border-b border-black/20 lg:pb-4 pb-2.5 lg:mb-5 mb-3"><a href="/blog/{{blogs.slug}}" class="group-hover:text-primary-900">{{ blogs.title }}</a></h3>
+                  <p class="m-0"> {{ blogs.short_description|raw }}</p>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+            {% if blogss.hasMorePages %}
+            <div class="text-center mt-6 sm:mt-10">
+                <a href="javascript:;" class="all-btn btn-primary btn-icon load-more-btn" data-next-page="{{ blogss.currentPage + 1 }}">
+                    Load More
+                    <span class="load-more-spinner" style="display: none;">
+                        <img src="{{ '/assets/images/loader-icon.svg' | theme }}" alt="Loading...">
+                    </span>
+                </a>
+            </div>
+            {% endif %}
+        </div>
+      </section>

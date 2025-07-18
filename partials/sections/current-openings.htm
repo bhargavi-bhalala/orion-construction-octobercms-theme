@@ -1,0 +1,37 @@
+<section class="py-10 xl:py-16 mb-10">
+  <div class="container-three">
+    <div class="flex items-center justify-between sm:mb-5 md:mb-10">
+      <h2 class="title">{{ section.section_title }}</h2>
+    </div>
+    <div class="border-t border-black" x-data="{selected:null}">
+      {% for job in section.job_listings %}
+      <div class="faqs-list relative group border-b border-black py-4 xl:py-6" :class="{ 'active': selected === {{ loop.index }} }">
+        <div class="current-title cursor-pointer sm:flex items-start justify-between m-0 relative gap-3 md:gap-5 xl:gap-8"  @click="selected !== {{ loop.index }} ? selected = {{ loop.index }} : selected = null" :class="{ 'active': selected === {{ loop.index }} }">
+          <div class="mb-2 sm:mb-0">
+            <h3 class="text-black text-1xl md:text-2xl leading-normal xl:text-[24px] 2xl:text-3xl font-medium mb-0" >  {{ job.job_title }}</h3>
+            <span class="text-md md:text-lg">{{ job.company_name }}</span>
+          </div>
+          <a href="javascript:;" class="all-btn md:py-2 py-1.5">View Details</a>
+          <div class="current-arrow lg:w-10 lg:h-10 w-8 h-8 bg-primary-900 hidden items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none" class="lg:w-6 w-5">
+              <path d="M3.0293 18.3087H22.9726L13.0009 5.09155L3.0293 18.3087Z" fill="white"/>
+            </svg>
+          </div>
+        </div>
+        <div class="faqs-content overflow-hidden transition-all max-h-0 duration-700" x-ref="container{{ loop.index }}" x-bind:style="selected === {{ loop.index }} ? 'max-height: ' + $refs.container{{ loop.index }}.scrollHeight + 'px' : ''">
+
+          <p class="m-0 mt-3 mb-2 text-md md:text-2xl font-medium">Qualifications:</p>
+          <ul class="text-md md:text-lg text-black !list-disc pl-8">
+             {% for q in job.qualifications %}
+                <li>{{ q.item }}</li>
+              {% endfor %}
+          </ul>
+
+          <a href="{{ job.apply_link }}" class="all-btn mt-6 mb-2">{{ job.apply_btn_text }}</a>
+        </div>
+      </div>
+
+      {% endfor %}
+    </div>
+  </div>
+</section>

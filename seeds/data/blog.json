@@ -1,0 +1,328 @@
+[
+	{
+	"id":"1",
+	"site_id":"1",
+	"site_root_id":"1",
+	"blueprint_uuid":"aefc8ee2-e323-4b6a-911e-221cefb2f330",
+	"content_group":null,
+	"title":"Top Construction Tools",
+	"slug":"top-construction-tools",
+	"is_enabled":"1",
+	"published_at":null,
+	"published_at_date":"2025-07-15 09:45:20",
+	"expired_at":null,
+	"draft_mode":"1",
+	"primary_id":null,
+	"primary_attrs":null,
+	"is_version":"0",
+	"thumb_image":"[\"\\\/blog-img-1.jpg\"]",
+	"content":"<p>Mattis molestie a iaculis at erat pellentesque adipiscing commodo. Vehicula ipsum a arcu cursus. Id eu nisl nunc mi ipsum faucibus vitae aliquet nec. Nunc lobortis mattis aliquam faucibus purus in massa. Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Mattis rhoncus urna neque viverra justo nec ultrices dui. Aliquam vestibulum morbi blandit cursus risus at. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Ornare arcu odio ut sem nulla pharetra diam .Sagittis vitae et leo duis ut diam. Porta lorem mollis aliquam ut porttitor leo a diam. Lacinia at quis risus sed vulputate odio ut. Arcu vitae elementum curabitur vitae. Ultricies tristique nulla aliquet enim tortor at. Ultrices in iaculis nunc sed augue lacus viverra vitae. Duis convallis convallis tellus id interdum velit laoreet. Etiam sit amet nisl purus in mollis nunc sed. Elementum nisi quis eleifend quam adipiscing. Augue neque gravida in fermentum et sollicitudin ac. Pellentesque sit amet porttitor eget dolor morbi non.<\/p><p>Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Mattis rhoncus urna neque viverra justo nec ultrices dui. Aliquam vestibulum morbi blandit cursus risus at. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at<\/p>",
+	"quote":"Ultricies tristique nulla aliquet enim tortor at. Ultrices in iaculis nunc sed augue lacus viverra vitae. Duis convallis convallis tellus id interdum velit laoreet. Etiam sit amet nisl purus in mollis nunc sed. Elementum nisi quis eleifend quam adipiscing. Augue neque gravida in fermentum et sollicitudin ac. Pellentesque sit amet porttitor eget dolor morbi non.",
+	"created_user_id":"1",
+	"updated_user_id":"1",
+	"deleted_user_id":null,
+	"deleted_at":null,
+	"created_at":"2025-07-15 09:45:20",
+	"updated_at":"2025-07-15 10:06:43",
+	"banner":"[\"\\\/blog-detail-hero-img.jpg\"]",
+	"short_description":"<p>Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Purus in massa tempor nec feugiat nisl pretium. Sed libero enim sed faucibus turpis in. Risus commodo viverra maecenas accumsan. Erat pellentesque adipiscing commodo elit at imperdiet. Pellentesque elit ullamcorper dignissim cras.<\/p>",
+	"gallery": [
+		{
+			"image": "/blog-detail-img1.jpg"
+		},
+		{
+			"image": "/blog-detail-img2.jpg"
+		}
+	]
+},
+{
+	"id":"2",
+	"site_id":"1",
+	"site_root_id":"2",
+	"blueprint_uuid":"aefc8ee2-e323-4b6a-911e-221cefb2f330",
+	"content_group":null,
+	"title":"Cost Estimation in Construction",
+	"slug":"cost-estimation-in-construction",
+	"is_enabled":"1",
+	"published_at":null,
+	"published_at_date":"2025-07-15 09:48:10",
+	"expired_at":null,
+	"draft_mode":"1",
+	"primary_id":null,
+	"primary_attrs":null,
+	"is_version":"0",
+	"thumb_image":"[\"\\\/blog-img-2.jpg\"]",
+	"content":"<p>Mattis molestie a iaculis at erat pellentesque adipiscing commodo. Vehicula ipsum a arcu cursus. Id eu nisl nunc mi ipsum faucibus vitae aliquet nec. Nunc lobortis mattis aliquam faucibus purus in massa. Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Mattis rhoncus urna neque viverra justo nec ultrices dui. Aliquam vestibulum morbi blandit cursus risus at. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Ornare arcu odio ut sem nulla pharetra diam .Sagittis vitae et leo duis ut diam. Porta lorem mollis aliquam ut porttitor leo a diam. Lacinia at quis risus sed vulputate odio ut. Arcu vitae elementum curabitur vitae. Ultricies tristique nulla aliquet enim tortor at. Ultrices in iaculis nunc sed augue lacus viverra vitae. Duis convallis convallis tellus id interdum velit laoreet. Etiam sit amet nisl purus in mollis nunc sed. Elementum nisi quis eleifend quam adipiscing. Augue neque gravida in fermentum et sollicitudin ac. Pellentesque sit amet porttitor eget dolor morbi non.<\/p><p>Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Mattis rhoncus urna neque viverra justo nec ultrices dui. Aliquam vestibulum morbi blandit cursus risus at. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at<\/p>",
+	"quote":"Ultricies tristique nulla aliquet enim tortor at. Ultrices in iaculis nunc sed augue lacus viverra vitae. Duis convallis convallis tellus id interdum velit laoreet. Etiam sit amet nisl purus in mollis nunc sed. Elementum nisi quis eleifend quam adipiscing. Augue neque gravida in fermentum et sollicitudin ac. Pellentesque sit amet porttitor eget dolor morbi non.",
+	"created_user_id":"1",
+	"updated_user_id":"1",
+	"deleted_user_id":null,
+	"deleted_at":null,
+	"created_at":"2025-07-15 09:48:10",
+	"updated_at":"2025-07-15 10:06:36",
+	"banner":"[\"\\\/blog-detail-hero-img.jpg\"]",
+	"short_description":"<p>Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Purus in massa tempor nec feugiat nisl pretium. Sed libero enim sed faucibus turpis in. Risus commodo viverra maecenas accumsan. Erat pellentesque adipiscing commodo elit at imperdiet. Pellentesque elit ullamcorper dignissim cras.<\/p>",
+	"gallery": [
+		{
+			"image": "/blog-detail-img1.jpg"
+		},
+		{
+			"image": "/blog-detail-img2.jpg"
+		}
+	]
+
+	},
+	{
+	"id":"3",
+	"site_id":"1",
+	"site_root_id":"3",
+	"blueprint_uuid":"aefc8ee2-e323-4b6a-911e-221cefb2f330",
+	"content_group":null,
+	"title":"5 Key Safety Practices to Follow on a Construction Site",
+	"slug":"5-key-safety-practices-to-follow-on-a-construction-site",
+	"is_enabled":"1",
+	"published_at":null,
+	"published_at_date":"2025-07-15 09:49:07",
+	"expired_at":null,
+	"draft_mode":"1",
+	"primary_id":null,
+	"primary_attrs":null,
+	"is_version":"0",
+	"thumb_image":"[\"\\\/blog-img-1.jpg\"]",
+	"content":"<p>Mattis molestie a iaculis at erat pellentesque adipiscing commodo. Vehicula ipsum a arcu cursus. Id eu nisl nunc mi ipsum faucibus vitae aliquet nec. Nunc lobortis mattis aliquam faucibus purus in massa. Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Mattis rhoncus urna neque viverra justo nec ultrices dui. Aliquam vestibulum morbi blandit cursus risus at. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Ornare arcu odio ut sem nulla pharetra diam .Sagittis vitae et leo duis ut diam. Porta lorem mollis aliquam ut porttitor leo a diam. Lacinia at quis risus sed vulputate odio ut. Arcu vitae elementum curabitur vitae. Ultricies tristique nulla aliquet enim tortor at. Ultrices in iaculis nunc sed augue lacus viverra vitae. Duis convallis convallis tellus id interdum velit laoreet. Etiam sit amet nisl purus in mollis nunc sed. Elementum nisi quis eleifend quam adipiscing. Augue neque gravida in fermentum et sollicitudin ac. Pellentesque sit amet porttitor eget dolor morbi non.<\/p><p>Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Mattis rhoncus urna neque viverra justo nec ultrices dui. Aliquam vestibulum morbi blandit cursus risus at. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at<\/p>",
+	"quote":"Ultricies tristique nulla aliquet enim tortor at. Ultrices in iaculis nunc sed augue lacus viverra vitae. Duis convallis convallis tellus id interdum velit laoreet. Etiam sit amet nisl purus in mollis nunc sed. Elementum nisi quis eleifend quam adipiscing. Augue neque gravida in fermentum et sollicitudin ac. Pellentesque sit amet porttitor eget dolor morbi non.",
+	"created_user_id":"1",
+	"updated_user_id":"1",
+	"deleted_user_id":null,
+	"deleted_at":null,
+	"created_at":"2025-07-15 09:49:07",
+	"updated_at":"2025-07-15 10:06:27",
+	"banner":"[\"\\\/blog-detail-hero-img.jpg\"]",
+	"short_description":"<p>Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Purus in massa tempor nec feugiat nisl pretium. Sed libero enim sed faucibus turpis in. Risus commodo viverra maecenas accumsan. Erat pellentesque adipiscing commodo elit at imperdiet. Pellentesque elit ullamcorper dignissim cras.<\/p>"
+	,"gallery": [
+		{
+			"image": "/blog-detail-img1.jpg"
+		},
+		{
+			"image": "/blog-detail-img2.jpg"
+		}
+	]
+	},
+	{
+	"id":"4",
+	"site_id":"1",
+	"site_root_id":"4",
+	"blueprint_uuid":"aefc8ee2-e323-4b6a-911e-221cefb2f330",
+	"content_group":null,
+	"title":"How to Plan and Budget for Your Construction Project",
+	"slug":"how-to-plan-and-budget-for-your-construction-project",
+	"is_enabled":"1",
+	"published_at":null,
+	"published_at_date":"2025-07-15 09:49:07",
+	"expired_at":null,
+	"draft_mode":"1",
+	"primary_id":null,
+	"primary_attrs":null,
+	"is_version":"0",
+	"thumb_image":"[\"\\\/blog-img-4.jpg\"]",
+	"content":"<p>Mattis molestie a iaculis at erat pellentesque adipiscing commodo. Vehicula ipsum a arcu cursus. Id eu nisl nunc mi ipsum faucibus vitae aliquet nec. Nunc lobortis mattis aliquam faucibus purus in massa. Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Mattis rhoncus urna neque viverra justo nec ultrices dui. Aliquam vestibulum morbi blandit cursus risus at. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Ornare arcu odio ut sem nulla pharetra diam .Sagittis vitae et leo duis ut diam. Porta lorem mollis aliquam ut porttitor leo a diam. Lacinia at quis risus sed vulputate odio ut. Arcu vitae elementum curabitur vitae. Ultricies tristique nulla aliquet enim tortor at. Ultrices in iaculis nunc sed augue lacus viverra vitae. Duis convallis convallis tellus id interdum velit laoreet. Etiam sit amet nisl purus in mollis nunc sed. Elementum nisi quis eleifend quam adipiscing. Augue neque gravida in fermentum et sollicitudin ac. Pellentesque sit amet porttitor eget dolor morbi non.<\/p><p>Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Mattis rhoncus urna neque viverra justo nec ultrices dui. Aliquam vestibulum morbi blandit cursus risus at. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at<\/p>",
+	"quote":"Ultricies tristique nulla aliquet enim tortor at. Ultrices in iaculis nunc sed augue lacus viverra vitae. Duis convallis convallis tellus id interdum velit laoreet. Etiam sit amet nisl purus in mollis nunc sed. Elementum nisi quis eleifend quam adipiscing. Augue neque gravida in fermentum et sollicitudin ac. Pellentesque sit amet porttitor eget dolor morbi non.",
+	"created_user_id":"1",
+	"updated_user_id":"1",
+	"deleted_user_id":null,
+	"deleted_at":null,
+	"created_at":"2025-07-15 09:49:07",
+	"updated_at":"2025-07-15 10:06:09",
+	"banner":"[\"\\\/blog-detail-hero-img.jpg\"]",
+	"short_description":"<p>Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Purus in massa tempor nec feugiat nisl pretium. Sed libero enim sed faucibus turpis in. Risus commodo viverra maecenas accumsan. Erat pellentesque adipiscing commodo elit at imperdiet. Pellentesque elit ullamcorper dignissim cras.<\/p>"
+	,"gallery": [
+      {
+        "image": "/blog-detail-img1.jpg"
+      },
+      {
+        "image": "/blog-detail-img2.jpg"
+      }
+    ]
+	},
+
+	{
+	"id":"5",
+	"site_id":"1",
+	"site_root_id":"5",
+	"blueprint_uuid":"aefc8ee2-e323-4b6a-911e-221cefb2f330",
+	"content_group":null,
+	"title":"The Role of Technology in Modern Construction",
+	"slug":"the-role-of-technology-in-modern-construction",
+	"is_enabled":"1",
+	"published_at":null,
+	"published_at_date":"2025-07-15 09:52:35",
+	"expired_at":null,
+	"draft_mode":"1",
+	"primary_id":null,
+	"primary_attrs":null,
+	"is_version":"0",
+	"thumb_image":"[\"\\\/blog-img-5.jpg\"]",
+	"content":"<p>Mattis molestie a iaculis at erat pellentesque adipiscing commodo. Vehicula ipsum a arcu cursus. Id eu nisl nunc mi ipsum faucibus vitae aliquet nec. Nunc lobortis mattis aliquam faucibus purus in massa. Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Mattis rhoncus urna neque viverra justo nec ultrices dui. Aliquam vestibulum morbi blandit cursus risus at. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Ornare arcu odio ut sem nulla pharetra diam .Sagittis vitae et leo duis ut diam. Porta lorem mollis aliquam ut porttitor leo a diam. Lacinia at quis risus sed vulputate odio ut. Arcu vitae elementum curabitur vitae. Ultricies tristique nulla aliquet enim tortor at. Ultrices in iaculis nunc sed augue lacus viverra vitae. Duis convallis convallis tellus id interdum velit laoreet. Etiam sit amet nisl purus in mollis nunc sed. Elementum nisi quis eleifend quam adipiscing. Augue neque gravida in fermentum et sollicitudin ac. Pellentesque sit amet porttitor eget dolor morbi non.<\/p><p>Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Mattis rhoncus urna neque viverra justo nec ultrices dui. Aliquam vestibulum morbi blandit cursus risus at. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at<\/p>",
+	"quote":"Ultricies tristique nulla aliquet enim tortor at. Ultrices in iaculis nunc sed augue lacus viverra vitae. Duis convallis convallis tellus id interdum velit laoreet. Etiam sit amet nisl purus in mollis nunc sed. Elementum nisi quis eleifend quam adipiscing. Augue neque gravida in fermentum et sollicitudin ac. Pellentesque sit amet porttitor eget dolor morbi non.",
+	"created_user_id":"1",
+	"updated_user_id":"1",
+	"deleted_user_id":null,
+	"deleted_at":null,
+	"created_at":"2025-07-15 09:52:35",
+	"updated_at":"2025-07-15 09:53:38",
+	"banner":"[\"\\\/blog-detail-hero-img.jpg\"]",
+	"short_description":"<p>Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Purus in massa tempor nec feugiat nisl pretium. Sed libero enim sed faucibus turpis in. Risus commodo viverra maecenas accumsan. Erat pellentesque adipiscing commodo elit at imperdiet. Pellentesque elit ullamcorper dignissim cras.<\/p>",
+	"gallery": [
+      {
+        "image": "/blog-detail-img1.jpg"
+      },
+      {
+        "image": "/blog-detail-img2.jpg"
+      }
+    ]
+	},
+	{
+	"id":"6",
+	"site_id":"1",
+	"site_root_id":"6",
+	"blueprint_uuid":"aefc8ee2-e323-4b6a-911e-221cefb2f330",
+	"content_group":null,
+	"title":"Steps Involved in the Construction Process",
+	"slug":"steps-involved-in-the-construction-process",
+	"is_enabled":"1",
+	"published_at":null,
+	"published_at_date":"2025-07-15 09:52:35",
+	"expired_at":null,
+	"draft_mode":"1",
+	"primary_id":null,
+	"primary_attrs":null,
+	"is_version":"0",
+	"thumb_image":"[\"\\\/blog-img-6.jpg\"]",
+	"content":"<p>Mattis molestie a iaculis at erat pellentesque adipiscing commodo. Vehicula ipsum a arcu cursus. Id eu nisl nunc mi ipsum faucibus vitae aliquet nec. Nunc lobortis mattis aliquam faucibus purus in massa. Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Mattis rhoncus urna neque viverra justo nec ultrices dui. Aliquam vestibulum morbi blandit cursus risus at. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Ornare arcu odio ut sem nulla pharetra diam .Sagittis vitae et leo duis ut diam. Porta lorem mollis aliquam ut porttitor leo a diam. Lacinia at quis risus sed vulputate odio ut. Arcu vitae elementum curabitur vitae. Ultricies tristique nulla aliquet enim tortor at. Ultrices in iaculis nunc sed augue lacus viverra vitae. Duis convallis convallis tellus id interdum velit laoreet. Etiam sit amet nisl purus in mollis nunc sed. Elementum nisi quis eleifend quam adipiscing. Augue neque gravida in fermentum et sollicitudin ac. Pellentesque sit amet porttitor eget dolor morbi non.<\/p><p>Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Mattis rhoncus urna neque viverra justo nec ultrices dui. Aliquam vestibulum morbi blandit cursus risus at. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at<\/p>",
+	"quote":"Ultricies tristique nulla aliquet enim tortor at. Ultrices in iaculis nunc sed augue lacus viverra vitae. Duis convallis convallis tellus id interdum velit laoreet. Etiam sit amet nisl purus in mollis nunc sed. Elementum nisi quis eleifend quam adipiscing. Augue neque gravida in fermentum et sollicitudin ac. Pellentesque sit amet porttitor eget dolor morbi non.",
+	"created_user_id":"1",
+	"updated_user_id":"1",
+	"deleted_user_id":null,
+	"deleted_at":null,
+	"created_at":"2025-07-15 09:52:35",
+	"updated_at":"2025-07-15 09:59:00",
+	"banner":"[\"\\\/blog-detail-hero-img.jpg\"]",
+	"short_description":"<p>Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Purus in massa tempor nec feugiat nisl pretium. Sed libero enim sed faucibus turpis in. Risus commodo viverra maecenas accumsan. Erat pellentesque adipiscing commodo elit at imperdiet. Pellentesque elit ullamcorper dignissim cras.<\/p>",
+	"gallery": [
+      {
+        "image": "/blog-detail-img1.jpg"
+      },
+      {
+        "image": "/blog-detail-img2.jpg"
+      }
+    ]
+	},
+	{
+		"id":"7",
+		"site_id":"1",
+		"site_root_id":"7",
+		"blueprint_uuid":"aefc8ee2-e323-4b6a-911e-221cefb2f330",
+		"content_group":null,
+		"title":"Sustainable Construction Practices You Need to Know",
+		"slug":"sustainable-construction-practices-you-need-to-know",
+		"is_enabled":"1",
+		"published_at":null,
+		"published_at_date":"2025-07-15 09:52:35",
+		"expired_at":null,
+		"draft_mode":"1",
+		"primary_id":null,
+		"primary_attrs":null,
+		"is_version":"0",
+		"thumb_image":"[\"\\\/blog-img-8.jpg\"]",
+		"content":"<p>Mattis molestie a iaculis at erat pellentesque adipiscing commodo. Vehicula ipsum a arcu cursus. Id eu nisl nunc mi ipsum faucibus vitae aliquet nec. Nunc lobortis mattis aliquam faucibus purus in massa. Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Mattis rhoncus urna neque viverra justo nec ultrices dui. Aliquam vestibulum morbi blandit cursus risus at. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Ornare arcu odio ut sem nulla pharetra diam .Sagittis vitae et leo duis ut diam. Porta lorem mollis aliquam ut porttitor leo a diam. Lacinia at quis risus sed vulputate odio ut. Arcu vitae elementum curabitur vitae. Ultricies tristique nulla aliquet enim tortor at. Ultrices in iaculis nunc sed augue lacus viverra vitae. Duis convallis convallis tellus id interdum velit laoreet. Etiam sit amet nisl purus in mollis nunc sed. Elementum nisi quis eleifend quam adipiscing. Augue neque gravida in fermentum et sollicitudin ac. Pellentesque sit amet porttitor eget dolor morbi non.<\/p><p>Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Mattis rhoncus urna neque viverra justo nec ultrices dui. Aliquam vestibulum morbi blandit cursus risus at. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at<\/p>",
+		"quote":"Ultricies tristique nulla aliquet enim tortor at. Ultrices in iaculis nunc sed augue lacus viverra vitae. Duis convallis convallis tellus id interdum velit laoreet. Etiam sit amet nisl purus in mollis nunc sed. Elementum nisi quis eleifend quam adipiscing. Augue neque gravida in fermentum et sollicitudin ac. Pellentesque sit amet porttitor eget dolor morbi non.",
+		"created_user_id":"1",
+		"updated_user_id":"1",
+		"deleted_user_id":null,
+		"deleted_at":null,
+		"created_at":"2025-07-15 09:52:35",
+		"updated_at":"2025-07-15 10:05:46",
+		"banner":"[\"\\\/blog-detail-hero-img.jpg\"]",
+		"short_description":"<p>Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Purus in massa tempor nec feugiat nisl pretium. Sed libero enim sed faucibus turpis in. Risus commodo viverra maecenas accumsan. Erat pellentesque adipiscing commodo elit at imperdiet. Pellentesque elit ullamcorper dignissim cras.<\/p>",
+		"gallery": [
+			{
+				"image": "/blog-detail-img1.jpg"
+			},
+			{
+				"image": "/blog-detail-img2.jpg"
+			}
+		]
+	},
+	{
+		"id":"8",
+		"site_id":"1",
+		"site_root_id":"8",
+		"blueprint_uuid":"aefc8ee2-e323-4b6a-911e-221cefb2f330",
+		"content_group":null,
+		"title":"The Dos and Don'ts of Renovating a Historic Building",
+		"slug":"the-dos-and-don'ts-of-renovating-a-historic-building",
+		"is_enabled":"1",
+		"published_at":null,
+		"published_at_date":"2025-07-15 09:52:35",
+		"expired_at":null,
+		"draft_mode":"1",
+		"primary_id":null,
+		"primary_attrs":null,
+		"is_version":"0",
+		"thumb_image":"[\"\\\/blog-img-7.jpg\"]",
+		"content":"<p>Mattis molestie a iaculis at erat pellentesque adipiscing commodo. Vehicula ipsum a arcu cursus. Id eu nisl nunc mi ipsum faucibus vitae aliquet nec. Nunc lobortis mattis aliquam faucibus purus in massa. Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Mattis rhoncus urna neque viverra justo nec ultrices dui. Aliquam vestibulum morbi blandit cursus risus at. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Ornare arcu odio ut sem nulla pharetra diam .Sagittis vitae et leo duis ut diam. Porta lorem mollis aliquam ut porttitor leo a diam. Lacinia at quis risus sed vulputate odio ut. Arcu vitae elementum curabitur vitae. Ultricies tristique nulla aliquet enim tortor at. Ultrices in iaculis nunc sed augue lacus viverra vitae. Duis convallis convallis tellus id interdum velit laoreet. Etiam sit amet nisl purus in mollis nunc sed. Elementum nisi quis eleifend quam adipiscing. Augue neque gravida in fermentum et sollicitudin ac. Pellentesque sit amet porttitor eget dolor morbi non.<\/p><p>Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Mattis rhoncus urna neque viverra justo nec ultrices dui. Aliquam vestibulum morbi blandit cursus risus at. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at<\/p>",
+		"quote":"Ultricies tristique nulla aliquet enim tortor at. Ultrices in iaculis nunc sed augue lacus viverra vitae. Duis convallis convallis tellus id interdum velit laoreet. Etiam sit amet nisl purus in mollis nunc sed. Elementum nisi quis eleifend quam adipiscing. Augue neque gravida in fermentum et sollicitudin ac. Pellentesque sit amet porttitor eget dolor morbi non.",
+		"created_user_id":"1",
+		"updated_user_id":"1",
+		"deleted_user_id":null,
+		"deleted_at":null,
+		"created_at":"2025-07-15 09:52:35",
+		"updated_at":"2025-07-15 10:14:15",
+		"banner":"[\"\\\/blog-detail-hero-img.jpg\"]",
+			"short_description":"<p>Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Purus in massa tempor nec feugiat nisl pretium. Sed libero enim sed faucibus turpis in. Risus commodo viverra maecenas accumsan. Erat pellentesque adipiscing commodo elit at imperdiet. Pellentesque elit ullamcorper dignissim cras.<\/p>",
+			"gallery": [
+				{
+					"image": "/blog-detail-img1.jpg"
+				},
+				{
+					"image": "/blog-detail-img2.jpg"
+				}
+			]
+	},
+	{
+		"id":"9",
+		"site_id":"1",
+		"site_root_id":"9",
+		"blueprint_uuid":"aefc8ee2-e323-4b6a-911e-221cefb2f330",
+		"content_group":null,
+		"title":"Building Green",
+		"slug":"building-green",
+		"is_enabled":"1",
+		"published_at":null,
+		"published_at_date":"2025-07-15 10:03:37",
+		"expired_at":null,
+		"draft_mode":"1",
+		"primary_id":null,
+		"primary_attrs":null,
+		"is_version":"0",
+		"thumb_image":"[\"\\\/blog-img-9.jpg\"]",
+		"content":"<p>Mattis molestie a iaculis at erat pellentesque adipiscing commodo. Vehicula ipsum a arcu cursus. Id eu nisl nunc mi ipsum faucibus vitae aliquet nec. Nunc lobortis mattis aliquam faucibus purus in massa. Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Mattis rhoncus urna neque viverra justo nec ultrices dui. Aliquam vestibulum morbi blandit cursus risus at. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Ornare arcu odio ut sem nulla pharetra diam .Sagittis vitae et leo duis ut diam. Porta lorem mollis aliquam ut porttitor leo a diam. Lacinia at quis risus sed vulputate odio ut. Arcu vitae elementum curabitur vitae. Ultricies tristique nulla aliquet enim tortor at. Ultrices in iaculis nunc sed augue lacus viverra vitae. Duis convallis convallis tellus id interdum velit laoreet. Etiam sit amet nisl purus in mollis nunc sed. Elementum nisi quis eleifend quam adipiscing. Augue neque gravida in fermentum et sollicitudin ac. Pellentesque sit amet porttitor eget dolor morbi non.<\/p><p>Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Mattis rhoncus urna neque viverra justo nec ultrices dui. Aliquam vestibulum morbi blandit cursus risus at. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at<\/p>",
+		"quote":"Ultricies tristique nulla aliquet enim tortor at. Ultrices in iaculis nunc sed augue lacus viverra vitae. Duis convallis convallis tellus id interdum velit laoreet. Etiam sit amet nisl purus in mollis nunc sed. Elementum nisi quis eleifend quam adipiscing. Augue neque gravida in fermentum et sollicitudin ac. Pellentesque sit amet porttitor eget dolor morbi non.",
+		"created_user_id":"1",
+		"updated_user_id":"1",
+		"deleted_user_id":null,
+		"deleted_at":null,
+		"created_at":"2025-07-15 10:03:37",
+		"updated_at":"2025-07-15 10:05:32",
+		"banner":"[\"\\\/blog-detail-hero-img.jpg\"]",
+			"short_description":"<p>Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Purus in massa tempor nec feugiat nisl pretium. Sed libero enim sed faucibus turpis in. Risus commodo viverra maecenas accumsan. Erat pellentesque adipiscing commodo elit at imperdiet. Pellentesque elit ullamcorper dignissim cras.<\/p>",
+			"gallery": [
+				{
+					"image": "/blog-detail-img1.jpg"
+				},
+				{
+					"image": "/blog-detail-img2.jpg"
+				}
+			]
+	}
+]

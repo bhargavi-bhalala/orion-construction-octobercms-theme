@@ -1,0 +1,16 @@
+uuid: 05d76c0d-4300-461e-be33-c2fed97270de
+handle: Blocks\OurServicesSection
+type: mixin
+name: Our Services Section
+
+fields:
+  section_title:
+    label: Section Title
+    type: text
+    default: Our Services
+
+  services:
+    label: Service
+    type: entries
+    source: OurServices
+    maxItems: 3

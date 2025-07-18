@@ -1,0 +1,99 @@
+uuid: a105160d-726f-4465-b7b7-814a498260a2
+handle: Project
+type: entry
+name: Project
+drafts: false
+
+
+navigation:
+    icon: icon-file
+    order: 200
+
+fields:
+        title:
+            label: Title
+            type: text
+            span: left
+
+        thumb_image:
+            label: Thumb Image
+            type: mediafinder
+            mode: image
+            maxFiles: 1
+            span: right
+
+        location:
+            label: Location
+            type: text
+            span: left
+
+        status:
+            label: Status
+            type: text
+            span: right
+
+        size:
+            label: Size
+            type: text
+            span: left
+
+        type:
+            label: Type
+            type: text
+            span: right
+
+        working_days:
+            label: Working Days
+            type: text
+            span: left
+
+        banner:
+            label: Banner
+            type: mediafinder
+            mode: image
+            span: full    
+
+        project_description:
+            label: Description
+            type: richeditor
+            size: large
+            span: full
+
+        gallery:
+            label: Project Gallery
+            type: repeater
+            form:
+                fields:
+                    image:
+                        label: Image
+                        type: mediafinder
+                        mode: image
+
+        milestones:
+            label: Project Milestones
+            type: repeater
+            form:
+                fields:
+                    date:
+                        label: Date
+                        type: datepicker
+                        mode: date
+                        format: F Y
+                        span: left
+                    title:
+                        label: Title
+                        type: text
+                        span: right
+                    description:
+                        label: Description
+                        type: textarea
+                    image:
+                        label: Milestone Image
+                        type: mediafinder
+                        mode: image
+
+        team:
+            label: Artist Team
+            type: entries
+            source: Artists
+            maxItems: 5

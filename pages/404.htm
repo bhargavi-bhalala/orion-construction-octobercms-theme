@@ -1,0 +1,25 @@
+url = "/404"
+layout = "default"
+title = 404
+seoOptionsOgTitle = "404 page"
+seoOptionsOgDescription = "404 page"
+seoOptionsOgImage = "/Orion Image.png"
+seoOptionsEnabledInSitemap = 1
+seoOptionsUseUpdatedAt = 1
+seoOptionsRobotIndex = "index"
+seoOptionsRobotFollow = "follow"
+seoOptionsOgCard = "summary_large_image"
+seoOptionsOgRefImage = "{{ 'assets/images/Orion Image.png' | theme }}"
+
+[section notfound]
+handle = "Pages\Custom404"
+==
+{% set page = notfound.getRecord() %}
+
+<section class="py-20 text-center">
+    <h1 class="text-5xl font-bold">404</h1>
+    <p class="text-xl mt-4">{{ page.message }}</p>
+    <a href="/" class="text-blue-500 underline mt-6 inline-block">
+        {{ page.back_button_text }}
+    </a>
+</section>

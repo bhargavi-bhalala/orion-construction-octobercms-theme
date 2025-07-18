@@ -1,0 +1,21 @@
+{% if is_homepagetwo %}
+<section class="py-10 xl:py-24">
+  <div class="container">
+    <div class="container-two">
+      <div class="md:flex justify-between gap-5">
+        {% for service in section.services %}
+          <div class="lg:flex items-center gap-5 md:w-1/3 md:my-0 my-5">
+            <div class="shrink-0 flex items-center justify-center max-w-[70px] lg:max-w-[90px] h-[90px] lg:h-auto 1xl:max-w-[112px] w-full">
+              <img src="{{ service.icon | media }}" alt="icon img" class="max-w-full h-full lg:w-24 w-20">
+            </div>
+            <div class="border-t lg:border-t-0 lg:border-l border-black pt-3 mt-3 lg:mt-0 lg:pt-0 lg:pl-6">
+              <h3 class="mb-1 text-2xl lg:text-[25px]">{{ service.title }}</h3>
+              <p class="text-md leading-normal mb-0">{{ service.description }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+      {% endif %}

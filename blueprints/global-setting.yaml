@@ -1,0 +1,33 @@
+uuid: d5207ef9-52dc-4cb6-bde5-8fcb62d404b8
+type: global
+handle: Globals\Settings
+name: Global Settings
+description: Site-wide header and footer content
+
+navigation:
+    icon: icon-cog
+    order: 100
+
+fields:
+    header_variant:
+        label: Header Layout
+        type: dropdown
+        options:
+            header-1: Header 1
+            header-2: Header 2
+            header-3: Header 3
+
+    footer_variant:
+        label: Footer Layout
+        type: dropdown
+        options:
+            footer-1: Footer 1
+            footer-2: Footer 2
+            footer-3: Footer 3
+
+    preloader:
+        label: Preloader
+        type: mediafinder
+        mode: image
+        maxFiles: 1
+        validation: required

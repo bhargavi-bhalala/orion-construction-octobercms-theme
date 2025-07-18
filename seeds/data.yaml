@@ -1,0 +1,23 @@
+-
+    name: Contact Data
+    class: Tailor\Models\RecordImport
+    file: seeds/data/contact.json
+    attributes:
+        file_format: json
+        blueprint_uuid: b022a74b-15e6-4c6b-9eb9-17efc5103543
+
+-
+    name: About Data
+    class: Tailor\Models\RecordImport
+    file: seeds/data/about.json
+    attributes:
+        file_format: json
+        blueprint_uuid: 010d1830-49e7-4d37-9d15-a4f7c684f5e0
+
+-
+    name: Blog Data
+    class: Tailor\Models\RecordImport
+    file: seeds/data/blog.json
+    attributes:
+        file_format: json
+        blueprint_uuid: aefc8ee2-e323-4b6a-911e-221cefb2f330

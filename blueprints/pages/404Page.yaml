@@ -1,0 +1,22 @@
+uuid: 9e88c492-60ab-4641-b1e9-447e07a7b9fa
+handle: Pages\Custom404
+name: 404 Page
+type: single
+drafts: false
+
+navigation:
+  label: Pages
+  icon: icon-file
+
+fields:
+  title:
+    label: Title
+    type: text
+
+  message:
+    label: Message
+    type: textarea
+
+  back_button_text:
+    label: Button Text
+    type: text

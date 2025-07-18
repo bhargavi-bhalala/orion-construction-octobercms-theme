@@ -1,0 +1,20 @@
+url = "/home-two"
+layout = "default"
+title = "Home Two"
+seoOptionsOgTitle = "Home Page Two"
+seoOptionsOgDescription = "Home Page Two"
+seoOptionsOgImage = "/Orion Image.png"
+seoOptionsOgRefImage = "{{ 'assets/images/Orion Image.png' | theme }}"
+seoOptionsEnabledInSitemap = 1
+seoOptionsUseUpdatedAt = 1
+seoOptionsRobotIndex = "index"
+seoOptionsRobotFollow = "follow"
+seoOptionsOgCard = "summary_large_image"
+
+[section homePageTwo]
+handle = "Page\Hometwo"
+==
+{% set is_homepagetwo = true %}
+{% for section in homePageTwo.sections %}
+    {% partial 'sections/' ~ str_slug(section.type) section=section is_homepagetwo=is_homepagetwo %}
+{% endfor %}

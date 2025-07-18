@@ -1,0 +1,39 @@
+uuid: c57a7662-ab09-4888-ad10-61acedc6ea98
+handle: Page\Privacypolicypage
+type: single
+name: Privacy policy page
+drafts: true
+
+navigation:
+    icon: icon-rocket
+    order: 200
+
+fields:
+  title:
+    label: Main Title
+    type: text
+    default: Privacy policy
+
+  content_blocks:
+    label: Content Blocks
+    type: repeater
+    prompt: Add Section Block
+    form:
+      fields:
+        heading:
+          label: Heading (e.g., "1. Use of Services")
+          type: text
+
+        description:
+          label: Description
+          type: richeditor
+          size: huge
+
+        bullet_points:
+          label: Bullet Points
+          type: repeater
+          form:
+            fields:
+              point:
+                label: Bullet Point
+                type: text

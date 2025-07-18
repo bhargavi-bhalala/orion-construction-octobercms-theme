@@ -1,0 +1,30 @@
+<section class="our-work-section relative py-8 lg:py-10 xl:py-12 z-1">
+  <div class="container">
+    <div class="text-center md:text-left md:flex items-center justify-between mb-5 lg:mb-10 border-b border-black/10 mb-10 pb-5">
+      <h2 class="title md:mb-0">{{ section.section_title }}</h2>
+      {% if section.button_url %}
+      <a href="{{ section.button_url }}" class="all-btn btn-primary">
+        {{ section.button_text ?: 'Read More' }}
+      </a>
+      {% endif %}
+
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-10 xl:gap-20 items-start">
+        {% for item in section.artists|slice(0, 2) %}
+      <div class="relative before:pt-full before:block overflow-hidden group {% if loop.index == 2 %} sm:mt-10 md:mt-20 {% endif %}">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden">
+          <img src="{{ item.photo|media }}" alt="img" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute top-0 left-0 w-full h-full flex items-end p-5 xl:p-12 bg-[#747474]/60 transition-all translate-y-full group-hover:translate-y-0">
+          <div class="text-white">
+            <h3 class="text-3xl 1xl:text-[45px] text-white"><a href="javascript:;" class="hover:underline">{{ item.title }}</a></h3>
+            <span>{{ item.position }}</span>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>          
+
+  </div>
+</section>

@@ -1,0 +1,33 @@
+uuid: 7bc642b2-863f-4aa8-bcfe-95e32b796a62
+handle: Blocks\ServiceFeatures
+type: mixin
+name: Service Features
+
+fields:
+  section_title:
+    label: Section Title
+    type: text
+    default: Our Services
+
+  services:
+    label: Services
+    type: repeater
+    displayMode: builder
+    prompt: Add a service
+    form:
+      fields:
+        icon:
+          label: Icon Image
+          type: mediafinder
+          mode: image
+          span: left
+
+        title:
+          label: Title
+          type: text
+          span: right
+
+        description:
+          label: Description
+          type: textarea
+          size: small

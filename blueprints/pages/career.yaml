@@ -1,0 +1,14 @@
+uuid: 3da59d39-66e6-4325-b80d-f14974f260a2
+handle: Page\Career
+type: single
+name: Career Page
+drafts: true
+
+navigation:
+    icon: icon-rocket
+    order: 200
+
+fields:
+    _page_builder:
+        type: mixin
+        source: Fields\Sections

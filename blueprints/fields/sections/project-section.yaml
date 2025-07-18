@@ -1,0 +1,29 @@
+uuid: 470c588a-424d-4e1d-b76c-1b6c177f496b
+handle: Blocks\ProjectSection
+type: mixin
+name: Project Section
+
+fields:
+  sub_title:
+    label: Sub title
+    type: text
+    default: Portfolio
+    
+  section_title:
+    label: Section Title
+    type: text
+    default: Our Services
+
+  link_text:
+    label: Button Text
+    type: text
+    default: Read More
+
+  link_url:
+    label: Button URL
+    type: text  
+
+  projects:
+    label: Project
+    type: entries
+    source: Project

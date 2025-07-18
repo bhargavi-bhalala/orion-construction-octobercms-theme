@@ -1,0 +1,29 @@
+uuid: f3ca9cdd-d535-4490-a777-c11af31cd525
+handle: Blocks\OurTeamMember
+type: mixin
+name: Our Team Member
+
+fields:
+  section_title:
+    label: Section Title
+    type: text
+    default: Current Openings
+    span: full
+
+  button_text:
+    label: Button Text
+    type: text
+    default: View all
+    span: left
+
+  button_url:
+    label: Button URL
+    type: text
+    default: javascript:;
+    span: right
+    
+  artists:
+    label: Artists
+    type: entries
+    source: Artists
+    maxItems: 2

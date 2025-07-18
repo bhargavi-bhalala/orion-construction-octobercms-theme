@@ -1,0 +1,155 @@
+url = "/contact"
+layout = "default"
+title = "Contact"
+seoOptionsOgTitle = "Contact"
+seoOptionsOgDescription = "Contact"
+seoOptionsOgImage = "/Orion Image.png"
+seoOptionsOgRefImage = "{{ 'assets/images/Orion Image.png' | theme }}"
+seoOptionsEnabledInSitemap = 1
+seoOptionsUseUpdatedAt = 1
+seoOptionsRobotIndex = "index"
+seoOptionsRobotFollow = "follow"
+seoOptionsOgCard = "summary_large_image"
+
+[section contactpage]
+handle = "Page\Contact"
+identifier = "slug"
+==
+<?php
+function onContactFormSubmit()
+{
+    $data = post();
+
+    $rules = [
+        'first_name' => 'required|min:2',
+        'last_name'  => 'required|min:2',
+        'email'      => 'required|email',
+        'phone'      => 'required',
+        'message'    => 'required|min:5',
+    ];
+
+    $validator = Validator::make($data, $rules);
+
+    if ($validator->fails()) {
+        throw new \ValidationException($validator);
+    }
+
+    $firstName = $data['first_name'];
+    $lastName  = $data['last_name'];
+    $email     = $data['email'];
+    $phone     = $data['phone'];
+    $message   = $data['message'];
+
+    $entry = \Tailor\Models\EntryRecord::inSection('Forms\ContactForm');
+
+    // ✅ Required system fields
+    $entry->title = $firstName . ' ' . $lastName;
+
+    // If slug is required, you must also generate one:
+    $entry->slug = \Str::slug($entry->title) . '-' . uniqid();
+
+    // Custom fields
+    $entry->first_name = $firstName;
+    $entry->last_name  = $lastName;
+    $entry->email      = $email;
+    $entry->phone      = $phone;
+    $entry->message    = $message;
+
+    $entry->save();
+
+    return [
+    'status' => true,
+    'message' => 'Thank you! We have received your message.'
+    ];
+}
+?>
+==
+{% set contact = contactpage.getRecord() %}
+
+<!-- start Contact section -->
+      <section class="our-services-section relative py-8 md:py-12 lg:mb-5 xl:mb-16">
+        <div class="container">
+          <div class="mb-5 lg:mb-10">
+            <h2 class="title mb-0">{{ contact.title }}</h2>
+            <p>{{ contact.description }}</p>
+          </div>
+
+          <div class="flex flex-wrap">
+            <div class="w-full md:w-3/5">
+              <div class="contact-form max-w-[930px]">
+
+                <form id="contact-form" data-request="onContactFormSubmit" data-request-validate data-request-flash>
+                  <div class="grid grid-cols-1 md:grid-cols-2 md:gap-6">
+                    <div class="mb-4 md:mb-6">
+                      <label>First Name</label>
+                      <input type="text" class="contact-field" name="first_name">
+                      <span class="text-red-600" style="color: #ff0000;" data-validate-for="first_name"></span>
+                    </div>
+                    <div class="mb-4 md:mb-6">
+                      <label>Last Name</label>
+                      <input type="text" class="contact-field" name="last_name">
+                      <span class="text-red-600" style="color: #ff0000;" data-validate-for="last_name"></span>
+                    </div>
+                  </div>
+
+                  <div class="grid grid-cols-1 md:grid-cols-2 md:gap-6">
+                    <div class="mb-4 md:mb-6">
+                      <label>Email Address</label>
+                      <input type="email" class="contact-field" name="email">
+                      <span class="text-red-600" style="color: #ff0000;" data-validate-for="email"></span>
+                    </div>
+                    <div class="mb-4 md:mb-6">
+                      <label>Phone number</label>
+                      <input type="text" class="contact-field" name="phone">
+                      <span class="text-red-600" style="color: #ff0000;" data-validate-for="phone"></span>
+                    </div>
+                  </div>
+
+                  <div class="grid grid-cols-1 md:gap-6">
+                    <div class="mb-4 md:mb-6">
+                      <label>Type your Message</label>
+                      <textarea class="contact-field" name="message"></textarea>
+                      <span class="text-red-600" style="color: #ff0000;" data-validate-for="message"></span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <button type="submit" class="all-btn btn-primary">Submit</button>
+                  </div>
+
+
+                  <div id="contact-success" class="mt-4"></div>
+                </form>
+
+              </div>
+            </div>
+            <div class="w-full md:w-2/5">
+              <div class="mt-10 md:mt-0 md:max-w-[240px] mx-auto">
+                <h2 class="text-[30px] lg:text-[40px] 2xl:text-[45px] mb-3 md:mb-5">{{ contact.address_title }}</h2>
+
+                {% for office in contact.offices %}
+                <p class="text-lg 1xl:text-2xl mb-2 font-medium">{{ office.title }} - </p>
+                <p>{{ office.address|nl2br }}</p>
+                {% endfor %}
+                
+                <p>
+                  <a href="mailto:{{ contact.email }}" class="hover:text-primary-900">{{ contact.email }}</a><br>
+                  <a href="tel:{{ contact.phone }}" class="hover:text-primary-900">{{ contact.phone }}</a>
+                </p>
+
+                <ul class="flex items-center justify-start gap-3 md:gap-0 md:space-x-5 xl:pt-5">
+                 {% for social in contact.socials %}
+                 <li>
+                  <a href="{{ social.url }}" target="_blank" class="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] transition-all rounded-full bg-gray-200 flex items-center justify-center text-primary-900 hover:bg-primary-900 hover:text-white"> <i class="fa-brands fa-{{ social.icon }}"></i></a>
+                </li>
+                {% endfor %}
+
+
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end Contact section -->

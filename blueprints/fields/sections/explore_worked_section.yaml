@@ -1,0 +1,35 @@
+uuid: 01162962-e516-4fcc-8b2e-c99ef1f346dd
+handle: Blocks\ExploreWorkedSection
+type: mixin
+name: Explore Worked Section
+
+fields:
+  section_title:
+    label: Title
+    type: text
+    default: Explore Our Worked Sites
+
+  description:
+    label: Description
+    type: textarea
+
+  button_text:
+    label: Button Text
+    type: text
+    default: Discuss New Project Now!
+
+  button_url:
+    label: Button URL
+    type: text
+    default: /contact
+
+  images:
+    label: Images
+    type: repeater
+    prompt: Add Image
+    form:
+      fields:
+        image:
+          label: Image
+          type: mediafinder
+          mode: image

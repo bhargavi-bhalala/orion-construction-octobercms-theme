@@ -1,0 +1,47 @@
+uuid: 79809359-731f-400e-9015-cb70608bb2bf
+name: Hero section
+type: mixin
+handle: Sections\HeroSection
+
+fields:
+  background_image:
+    label: Background Image
+    type: fileupload
+    mode: image
+    maxFiles: 1
+    validation: required
+
+  hero_title:
+    label: Hero Title
+    type: text
+    validation: required
+
+  short_description:
+    label: Short Description (H3)
+    type: textarea
+    size: small
+    validation: required
+
+  long_description:
+    label: Detailed Paragraph
+    type: richeditor
+    size: large
+
+  text_image:
+    label: Overlay Text Image
+    type: mediafinder
+    mode: image
+
+  icon_image:
+    label: Overlay Icon Image
+    type: mediafinder
+    mode: image
+
+  link_text:
+    label: Button Text
+    type: text
+    default: Read More
+
+  link_url:
+    label: Button URL
+    type: text

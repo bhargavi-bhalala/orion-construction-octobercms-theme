@@ -1,0 +1,169 @@
+{% if is_homepage %}
+  <section class="our-work-section relative py-8 lg:py-10 xl:py-12">
+        <div class="container">
+          <div class="text-center md:text-left md:flex items-center justify-between mb-8 lg:mb-10">
+            <h2 class="title mb-0">{{ section.section_title }}</h2>
+            {% if section.link_text %}
+            <a href="{{ link_text.link_url }}" class="all-link">{{ section.link_text }} </a>
+            {% endif %}
+          </div>
+          <div class="our-work-slider pr-2 sm:pr-[10%] lg:pr-[20%]">
+            <div class="swiper mySwiper overflow-visible">
+              <div class="swiper-wrapper">
+                {% for project in section.projects|slice(0, 3) %}
+                <div class="swiper-slide">
+                  <div class="group">
+                    <div class="overflow-hidden relative before:pt-[114%] before:block">
+                      <a href="/project/{{ project.slug }}" class="absolute top-0 left-0 w-full h-full block">
+                        <img src="{{ project.thumb_image | media }}" alt="img" class="h-full w-full object-cover">
+                      </a>
+                      <a href="/project/{{ project.slug }}" class="w-[50px] h-[50px] lg:w-[85px] lg:h-[85px] rounded-full bg-white/80 items-center justify-center absolute top-3 lg:top-5 right-3 lg:right-5 hover:bg-white hover:text-primary-900 hidden group-hover:flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69" fill="none">
+                          <path d="M24.8251 24.825H44.5722M44.5722 24.825V44.572M44.5722 24.825L24.8251 44.572" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="pt-3 xl:pt-8">
+                      <h3 class="text-lg font-medium font-lexend xl:text-2xl">
+                        <a href="/project/{{ project.slug }}" class="group-hover:text-primary-900">{{ project.title }}</a>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+{% elseif is_homepagetwo %}
+  
+ <section class="our-projects-section our-projects-slider relative bg-gray-300 md:bg-transparent">
+        <div class="container">
+          <div class="container-two">
+            <div class="bg-gray-300 py-10 xl:py-16 md:px-5 xl:px-10">
+              <div class="flex items-end justify-between mb-8">
+                <div>
+                  <h5 class="sub-title">{{ section.sub_title }}</h5>
+                  <h2 class="title mb-0">{{ section.section_title }}</h2>
+                </div>
+                <div class="flex justify-end gap-2 slider-custom-arrow">
+                  <div class="swiper-button-prev arrow-slider static">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="23" viewBox="0 0 36 23" fill="none">
+                      <g clip-path="url(#clip0_100_117)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M5.44863 12.7578L13.6843 20.9909L11.8315 22.8411L0.439697 11.4493L11.8315 0.0549316L13.6843 1.90777L5.44863 10.1408H31.4118V12.7578H5.44863Z"
+                          fill="currentColor" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_100_117">
+                          <rect width="35.9837" height="22.8987" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="swiper-button-next arrow-slider static">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="37" height="23" viewBox="0 0 37 23" fill="none">
+                      <g clip-path="url(#clip0_100_119)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M31.48 12.7578L23.2443 20.9909L25.0971 22.8411L36.4889 11.4493L25.0971 0.0549316L23.2443 1.90777L31.48 10.1408H5.51679V12.7578H31.48Z"
+                          fill="currentColor" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_100_119">
+                          <rect width="35.9837" height="22.8987" fill="white" transform="matrix(-1 0 0 1 36.9286 0)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  {% for project in section.projects|slice(0, 5) %}
+                  <div class="swiper-slide">
+                    <!-- projects box -->
+                    <div class="our-projects-box bg-white group">
+                      <div class="relative overflow-hidden before:pt-[90%] before:block">
+                        <a href="/project/{{ project.slug }}" class="absolute top-0 left-0 w-full h-full block">
+                          <img src="{{ project.thumb_image | media }}" alt="img" class="h-full w-full object-cover transition-all group-hover:scale-110 duration-300">
+                        </a>
+                      </div>
+                      <div class="p-4 xl:p-7">
+                        <h3 class="mb-2 mt-4"><a href="/project/{{ project.slug }}" class="group-hover:text-primary-900">{{ project.title }}</a>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+{% elseif is_homepagethree %}
+
+<section class="relative pb-0 py-10 md:py-24">
+        <div class="container-three">
+          <div class="max-w-[1250px] mx-auto">
+            <div class="text-center mb-10">
+              <h2 class="title section-title mb-5">{{ section.sub_title }}</h2>
+              <p class="m-0">{{ section.section_title }}</p>
+            </div>
+
+            <div class="our-projects-slider-full">
+               {% for project in section.projects|slice(0, 5) %}
+              <div class="relative overflow-hidden rounded-2xl md:rounded-6xl before:pt-[44%] before:block min-h-[250px] md:min-h-none z-2  {% if not loop.last %} md:-mb-[25%] sm:-mb-[170px] -mb-[150px] duration-700 hover:mb-0 cursor-pointer{% endif %}">
+                <div class="absolute top-0 left-0 w-full h-full our-projects-bg before:w-full">
+                  <img src="{{ project.thumb_image | media }}" alt="img" class="h-full w-full object-cover">
+                </div>
+                <div class="absolute top-0 left-0 w-full h-full z-1 flex items-end p-5 md:p-14">
+                  <div>
+                    <h4 class="xl:text-xl md:text-lg text-md font-normal font-lexend xl:mb-4 mb-1 text-white">{{ project.location }}</h4>
+                    <h3 class="1xl:text-3xl 1xl:leading-3xl 2xl:text-4xl 2xl:leading-4xl text-white mb-0">{{ project.title }}</h3>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </section>
+
+{% else %}
+  <section class="our-work-section relative py-8 lg:py-10 xl:py-12">
+    <div class="container">
+      <div class="our-work-slider pr-2 sm:pr-[10%] lg:pr-[20%]">
+        <div class="swiper mySwiper overflow-visible">
+          <div class="swiper-wrapper">
+            {% for item in section.projects|slice(0, 3) %}
+            <div class="swiper-slide">
+              <div class="group">
+                <div class="overflow-hidden relative before:pt-[114%] before:block">
+                  <a href="/project/{{ item.slug }}" class="absolute top-0 left-0 w-full h-full block">
+                    <img src="{{ item.thumb_image | media }}" alt="img" class="h-full w-full object-cover">
+                  </a>
+                  <a href="/project/{{ item.slug }}" class="w-[50px] h-[50px] lg:w-[85px] lg:h-[85px] rounded-full bg-white/80 items-center justify-center absolute top-3 lg:top-5 right-3 lg:right-5 hover:bg-white hover:text-primary-900 hidden group-hover:flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69" fill="none">
+                      <path d="M24.8251 24.825H44.5722M44.5722 24.825V44.572M44.5722 24.825L24.8251 44.572" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="pt-3 xl:pt-8">
+                  <h3 class="text-lg font-medium font-lexend xl:text-2xl">
+                    <a href="/project/{{ item.slug }}" class="group-hover:text-primary-900">{{ item.title }}</a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}

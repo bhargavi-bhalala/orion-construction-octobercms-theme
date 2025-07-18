@@ -1,0 +1,33 @@
+uuid: 01d0c7c3-3e17-437c-8650-c50b2777dd32
+handle: Blocks\ContactNowSection
+type: mixin
+name: Contact Now Section
+
+fields:
+  background_image:
+    label: Background Image
+    type: mediafinder
+    mode: image
+
+  title:
+    label: Title
+    type: text
+    default: Have any dream in mind?
+
+  description:
+    label: Description
+    type: textarea
+
+  highlight_text:
+    label: Highlight Text
+    type: text
+    
+  button_text:
+    label: Button Text
+    type: text
+    default: Contact Now
+
+  button_link:
+    label: Button Link
+    type: text
+    default: /contact

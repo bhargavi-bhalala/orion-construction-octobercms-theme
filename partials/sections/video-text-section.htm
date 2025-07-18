@@ -1,0 +1,39 @@
+{% if is_homepagethree %}
+	
+	<section class="relative bg-gray-100 py-10 md:py-16 lg:py-24 rounded-t-[30px] sm:rounded-t-[60px] md:rounded-t-[90px]">
+        <div class="container-three">
+          <div class="wp-about-content-images-show">
+            <h3 class="mb-0 text-xl leading-xl md:text-2xl md:leading-2xl lg:text-3xl lg:leading-3xl 1xl:text-4xl 1xl:leading-4xl items-center">
+          	{% for block in section.hero_blocks %}
+              	{% if loop.index == 1 %} {{ block.text | raw }} 
+              	<span class="images-hover-1 lg:w-[250px] w-[150px] h-[40px] lg:h-[55px] xl:h-[69px] inline-flex align-middle rounded-7xl md:mx-3 mx-1.5 overflow-hidden transition-all" data-label="reveal-one">
+
+              		{% set videoId = block.video | split('?v=') | last %}
+              		{% set embedUrl = 'https://www.youtube.com/embed/' ~ videoId %}
+              		<div class=" lg:w-[250px] w-[150px] h-[40px] lg:h-[55px] xl:h-[69px] inline-flex align-middle rounded-7xl object-cover">
+              			<iframe class="w-full h-full" src="{{ embedUrl }}?autoplay=1&mute=1&loop=1&playlist={{ videoId }}&controls=0&playsinline=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen ></iframe>
+              		</div>
+                </span>
+                {% endif %}
+
+                {% if loop.index == 2 %} {{ block.text | raw }} {% endif %}
+                {% if loop.index == 3 %}
+                <span class="text-black/40">
+                	 {{ block.text | raw }}
+                </span>
+                 {% endif %}
+                 {% if loop.index == 3 %}
+                	{% if block.image %}
+                <span class="images-hover-2 inline-flex align-middle w-[50px] lg:w-[75px] xl:w-[95px] h-[40px] lg:h-[70px] xl:h-[83px] rounded-7xl md:mx-3 mx-1.5 overflow-hidden" data-label="reveal-two">
+                	<img src="{{ block.image | media }}" alt="reveal-bg-two" class="w-full h-full object-cover">
+                </span> 
+                {% endif %}
+                	{% endif %}
+                {% if loop.index == 4 %} {{ block.text | raw }} {% endif %}
+            {% endfor %}
+            </h3>
+          </div>
+        </div>
+      </section>
+
+{% endif %}

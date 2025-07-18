@@ -1,0 +1,14 @@
+uuid: 010d1830-49e7-4d37-9d15-a4f7c684f5e0
+handle: Page\About
+type: single
+name: About Page
+drafts: false
+
+navigation:
+    icon: icon-rocket
+    order: 200
+
+fields:
+    _page_builder:
+        type: mixin
+        source: Fields\Sections

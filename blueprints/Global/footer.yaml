@@ -1,0 +1,80 @@
+uuid: 6ad5b517-eb3b-4cfa-a0c4-100084918ecd
+handle: Site\Footer
+type: entry
+name: Footer
+drafts: false
+pagefinder: false
+
+navigation: 
+    label: Footer
+    icon: icon-sitemap
+
+fields:
+  description:
+      label: Description
+      type: richeditor
+      size: huge
+      
+  address:
+    label: Address
+    type: textarea
+
+  links:
+    label: Menu Links
+    type: repeater
+    form:
+      fields:
+        label:
+          label: Link Label
+          type: text
+        url:
+          label: Link URL
+          type: text
+
+  socials:
+        label: Socials
+        type: repeater
+        form:
+            fields:
+                url:
+                    label: Url
+                    type: text
+                icon:
+                    label: Icon
+                    type: dropdown
+                    options:
+                        facebook-f: Facebook
+                        youtube: YouTube
+                        twitter: Twitter
+                        instagram: Instagram
+                        linkedin-in: LinkedIn
+                        github: GitHub
+                        whatsapp: WhatsApp
+                        pinterest-p: Pinterest
+                        telegram-plane: Telegram
+                        reddit-alien: Reddit Alien  
+
+
+  
+  copyright:
+           label: Copyright Text
+           type: richeditor
+
+  legal_links:
+    label: Legal Footer Links
+    type: repeater
+    form:
+      fields:
+        label:
+          label: Link Text
+          type: text
+        url:
+          label: Link URL
+          type: text
+
+  footer_image:
+        label: Footer image
+        type: fileupload
+        mode: image
+        maxFiles: 1
+        validation: required

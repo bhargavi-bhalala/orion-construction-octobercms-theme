@@ -1,0 +1,23 @@
+uuid: 6d10f033-6c61-41ab-8587-87e5cbc5529f
+handle: Blocks\VideoTextSection
+type: mixin
+name: Video Text Section
+
+fields:
+  hero_blocks:
+    label: Hero Blocks
+    type: repeater
+    prompt: Add Hero Block
+    form:
+      fields:
+        text:
+          label: Text
+          type: textarea
+        video:
+          label: Video URL
+          type: text
+        image:
+          label: Image File
+          type: mediafinder
+          mode: image
+          maxItems: 1

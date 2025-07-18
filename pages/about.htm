@@ -1,0 +1,21 @@
+url = "/about"
+layout = "default"
+title = "About"
+meta_title = "{{ aboutpage.title }}"
+seoOptionsOgTitle = "About page"
+seoOptionsOgDescription = "About page"
+seoOptionsOgImage = "/Orion Image.png"
+seoOptionsEnabledInSitemap = 1
+seoOptionsUseUpdatedAt = 1
+seoOptionsRobotIndex = "index"
+seoOptionsRobotFollow = "follow"
+seoOptionsOgCard = "summary_large_image"
+seoOptionsMetaDescription = "About Page"
+seoOptionsOgRefImage = "{{ 'assets/images/Orion Image.png' | theme }}"
+
+[section aboutPage]
+handle = "Page\About"
+==
+{% for section in aboutPage.sections %}
+    {% partial 'sections/' ~ str_slug(section.type) section=section  %}
+{% endfor %}

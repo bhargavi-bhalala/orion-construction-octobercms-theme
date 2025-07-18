@@ -1,0 +1,79 @@
+url = "/blog/:slug"
+layout = "default"
+title = "Blog Detail"
+seoOptionsOgTitle = "Blog Detail"
+seoOptionsOgDescription = "Blog Detail"
+seoOptionsOgImage = "/Orion Image.png"
+seoOptionsOgRefImage = "{{ 'assets/images/Orion Image.png' | theme }}"
+seoOptionsEnabledInSitemap = 1
+seoOptionsUseUpdatedAt = 1
+seoOptionsRobotIndex = "index"
+seoOptionsRobotFollow = "follow"
+seoOptionsOgCard = "summary_large_image"
+
+[resources]
+vars[activeNavLink] = "blog"
+
+[section blog]
+handle = "Blog"
+identifier = "slug"
+value = "{{ slug }}"
+==
+{% set record = blog.getRecord() %}
+
+<section class="hero-section relative">
+        <div class="container">
+          <div class="relative -mx-5 md:mx-0">
+            <img src="{{ record.banner | media }}" alt="{{ record.title }}" class="w-full object-cover h-[250px] sm:h-auto">
+          </div>
+        </div>
+      </section>
+      <!-- end hero section -->
+
+      <!-- start blog detail section -->
+      <section class="relative py-8 lg:py-12">
+        <div class="container">
+          <div class="mb-8 md:mb-10 max-w-[1200px] mx-auto">
+            <h1 class="title mb-2">{{ record.title }}</h1>
+            <p>{{ record.content|raw }}</p>
+
+            <blockquote class="border-l-4 border-primary-900 pl-5 py-4">
+              <p class="m-0 text-lg md:text-2xl text-black font-medium">{{ record.quote }}</p>
+            </blockquote>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 my-5 md:my-10">
+            	{% for item in blog.gallery %}
+              <div class="">
+                <img src="{{ item.image|media }}" alt="blog-detail-img-1">
+              </div>
+              {% endfor %}
+            </div>          
+
+          <!-- Related Blogs -->
+          <div class="2xl:mt-20 md:mt-16 mt-12">
+            <div class="flex items-center justify-between mb-5">
+              <h2 class="title mb-0">Related Blogs</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-10">
+              <!-- blog box -->
+              	{% for related in blog.related_blogs|slice(0, 2) %}
+              <div class="blog-box bg-gray-200 group">
+                <div class="relative overflow-hidden before:pt-[52%] before:block">
+                  <a href="/blog/{{related.slug}}" class="absolute top-0 left-0 w-full h-full block">
+                    <img src="{{ related.thumb_image|media }}" alt="img" class="h-full w-full object-cover transition-all group-hover:scale-110 duration-300">
+                  </a>
+                </div>
+                <div class="p-4 xl:p-7">
+                  <h3 class="border-b border-black/20 lg:pb-4 pb-2.5 lg:mb-5 mb-3"><a href="/blog/{{related.slug}}" class="group-hover:text-primary-900">{{ related.title }}</a></h3>
+                  <p class="m-0">{{ related.short_description|raw }}</p>
+                </div>
+              </div>
+              {% endfor %}
+              <!-- blog box -->
+              
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </section>

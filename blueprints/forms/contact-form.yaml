@@ -1,0 +1,41 @@
+uuid: b990e3b2-b5cb-49a1-8d7f-492b1c5f7c2c
+handle: Forms\ContactForm
+name: Contact Form
+type: entry
+drafts: false
+pagefinder: false
+
+navigation:
+  label: ContactForm
+  icon: icon-folder
+
+fields:
+  title:
+    label: title
+    type: text
+    span: auto
+
+  slug:
+    label: slug
+    type: text
+    span: auto
+
+  first_name:
+    label: First Name
+    type: text
+
+  last_name:
+    label: Last Name
+    type: text
+
+  email:
+    label: Email
+    type: text
+
+  phone:
+    label: Phone
+    type: text
+
+  message:
+    label: Message
+    type: textarea

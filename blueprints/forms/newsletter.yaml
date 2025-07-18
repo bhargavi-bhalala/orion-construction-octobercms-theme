@@ -1,0 +1,14 @@
+uuid: cda3f967-8a65-4ee8-ae63-3f088240af53
+handle: Forms\Newsletter
+name: Newsletter Subscriptions
+type: entry
+drafts: false
+
+navigation: 
+    label: Newsletterooter  # <-- small typo here?
+    icon: icon-folder
+
+fields:
+    email:
+        label: Email Address
+        type: text

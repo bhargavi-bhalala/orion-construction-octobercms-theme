@@ -1,0 +1,14 @@
+uuid: 5894eb57-5839-47c6-be3e-9014ec08334a
+handle: Page\Home
+type: single
+name: Home Page
+drafts: false
+
+navigation:
+    icon: icon-rocket
+    order: 200
+
+fields:
+    _page_builder:
+        type: mixin
+        source: Fields\Sections

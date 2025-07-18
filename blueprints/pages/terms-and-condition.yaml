@@ -1,0 +1,39 @@
+uuid: 4d3f9d96-9b89-468b-9fa6-420af0491d3e
+handle: Page\Termsandconditionpage
+type: single
+name: Terms and condition page
+drafts: true
+
+navigation:
+    icon: icon-rocket
+    order: 200
+
+fields:
+  title:
+    label: Main Title
+    type: text
+    default: Terms & Conditions
+
+  content_blocks:
+    label: Content Blocks
+    type: repeater
+    prompt: Add Section Block
+    form:
+      fields:
+        heading:
+          label: Heading (e.g., "1. Use of Services")
+          type: text
+
+        description:
+          label: Description
+          type: richeditor
+          size: huge
+
+        bullet_points:
+          label: Bullet Points
+          type: repeater
+          form:
+            fields:
+              point:
+                label: Bullet Point
+                type: text

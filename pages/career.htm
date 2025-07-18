@@ -1,0 +1,20 @@
+url = "/career"
+layout = "default"
+title = "Career"
+meta_title = "{{careerpage.title}}"
+seoOptionsOgTitle = "Career"
+seoOptionsOgDescription = "Career"
+seoOptionsOgImage = "/Orion Image.png"
+seoOptionsOgRefImage = "{{ 'assets/images/Orion Image.png' | theme }}"
+seoOptionsEnabledInSitemap = 1
+seoOptionsUseUpdatedAt = 1
+seoOptionsRobotIndex = "index"
+seoOptionsRobotFollow = "follow"
+seoOptionsOgCard = "summary_large_image"
+
+[section careerpage]
+handle = "Page\Career"
+==
+{% for section in careerpage.sections %}
+    {% partial 'sections/' ~ str_slug(section.type) section=section  %}
+{% endfor %}

@@ -1,0 +1,51 @@
+uuid: b6fc11fc-d198-4f8e-9e5f-74d65db5543f
+handle: Setting
+type: entry
+name: Setting
+drafts: false
+
+navigation: 
+    label: Setting
+    icon: icon-gear
+
+fields:
+      favicon:
+           label: Favicon
+           type: fileupload
+           mode: image
+           maxFiles: 1
+           validation: required
+
+      logo:
+        label: Logo
+        type: fileupload
+        mode: image
+        maxFiles: 1
+        validation: required
+
+      white_logo:
+        label: White Logo
+        type: fileupload
+        mode: image
+        maxFiles: 1
+        validation: required
+
+      phone_number:
+        label: Phone Number
+        type: repeater
+        form:
+            fields:
+                number:
+                    label: Number
+                    type: text
+                    validation: required
+
+      email_address:
+            label: Email Address
+            type: repeater
+            form:
+                fields:
+                    email:
+                        label: Email
+                        type: text
+                        validation: required|email

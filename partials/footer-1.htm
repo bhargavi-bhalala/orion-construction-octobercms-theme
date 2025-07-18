@@ -1,0 +1,82 @@
+[section footer]
+handle = "Site\Footer"
+identifier = "slug"
+value = "footer"
+
+[section setting]
+handle = "Setting"
+identifier = "slug"
+value = "setting"
+==
+
+
+{% set iconLabels = {
+  'facebook-f': 'Facebook',
+  'youtube': 'YouTube',
+  'twitter': 'Twitter',
+  'instagram': 'Instagram',
+  'linkedin-in': 'LinkedIn',
+  'github': 'GitHub',
+  'whatsapp': 'WhatsApp',
+  'pinterest-p': 'Pinterest',
+  'telegram-plane': 'Telegram',
+  'reddit-alien': 'Reddit'
+} %}
+<!-- footer -->
+  <footer class="footer-part relative md:pt-12 xl:pt-[100px] overflow-hidden">
+    <!-- container -->
+    <div class="bg-primary-900 px-5 py-8 xl:p-12 relative z-1 md:w-[80%] xl:w-2/3">
+      <div class="mb-6 md:mb-10">
+        <a href="/"><img src="{{ setting.white_logo.path }}" alt="img" class="max-w-[150px] xl:max-w-full md:mx-0 mx-auto"></a>
+      </div>
+      <div class="1xl:pl-20 pr-5 xl:pr-0">
+        <div class="md:flex justify-between grid-cols-2 grid md:grid-cols-3 gap-5 md:text-left text-center">
+          <div class="mb-5 md:mb-0 md:order-1 order-1">
+            <ul class="text-white text-md 1xl:text-1xl 2xl:text-2xl 1xl:space-y-1">
+            
+             {% for link in footer.links %}
+             <li><a href="{{ link.url }}" class="hover:underline">{{ link.label }}</a></li>
+             {% endfor %}
+
+            </ul>
+          </div>
+          <div class=" md:order-2 order-3 md:col-auto col-span-2">
+            <p class="text-white text-md 1xl:text-1xl 2xl:text-2xl 1xl:space-y-2 mb-0">
+              {% for email_add in setting.email_address %}
+              {% if loop.first %}<a href="mailto:{{ email_add.email }}">{{ email_add.email }}</a>{% endif %}
+              {% endfor %}
+              <br>
+              {% for phone in setting.phone_number %}
+              {% if loop.first %}<a href="tel:{{ phone.number }}">{{ phone.number }}</a>{% endif %}
+              {% endfor %}
+              <br>
+              {{ footer.address|raw }}
+            </p>
+          </div>
+          <div class=" md:order-3 order-2 ">
+            <ul class="text-white text-md 1xl:text-1xl 2xl:text-2xl 1xl:space-y-1 md:max-w-[200px] mx-auto">
+
+              {% for social in footer.socials %}
+              <li>
+                <a href="{{ social.url }}" target="_blank" class="hover:underline"> {{ iconLabels[social.icon] }}</a>
+              </li>
+              {% endfor %}
+              
+            </ul>
+          </div>
+        </div>
+        <div class="mt-8 md:mt-20 text-white text-md  md:text-left text-center">
+
+            {{ footer.copyright|raw }} |
+            {% for link in footer.legal_links %}
+            <a href="{{ link.url }}" class="hover:underline">{{ link.label }}</a>
+            {% if not loop.last %} | {% endif %}
+            {% endfor %}
+          
+        </div>
+      </div>
+    </div>
+    <div class="absolute top-0 right-0 w-[55%] h-full hidden md:block">
+      <img src="{{ footer.footer_image.path }}" alt="img" class="w-full h-full object-cover">
+    </div>
+  </footer>

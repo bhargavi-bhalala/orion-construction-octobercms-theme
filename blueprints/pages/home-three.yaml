@@ -1,0 +1,14 @@
+uuid: 5dbc6dc0-fe84-4c88-88e4-eb061d03c2d1
+handle: Page\Homethree
+type: single
+name: Home Page Three
+drafts: false
+
+navigation:
+    icon: icon-rocket
+    order: 200
+
+fields:
+    _page_builder:
+        type: mixin
+        source: Fields\Sections

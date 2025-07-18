@@ -1,0 +1,35 @@
+uuid: b57f1137-91d5-4201-b7a6-121f68effc58
+handle: Blocks\OurStorySection
+type: mixin
+name: Our Story Section
+
+fields:
+  title:
+    label: Title
+    type: text
+    default: Our Story
+
+  description:
+    label: Description
+    type: richeditor
+
+  link_text:
+    label: Button Text
+    type: text
+    default: Read More
+
+  link_url:
+    label: Button URL
+    type: text
+
+  side_image:
+    label: Side Image
+    type: mediafinder
+    mode: image
+
+  section_type:
+    label: Section Type
+    type: dropdown
+    options:
+        left: Left
+        right: Right
