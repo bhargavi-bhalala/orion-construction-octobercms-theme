@@ -9,5 +9,10 @@
             "email": "bhargavibhalala@gmail.com",
             "role": "Co-founder"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "Themes\\OrionConstruction\\": ""
+        }
+    }
 }
